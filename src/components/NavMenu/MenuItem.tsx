@@ -8,7 +8,7 @@ export interface IMenuItemProps {
 export default function MenuItem(props: IMenuItemProps) {
     return (
         <Box display='inline-block'>
-            <Text as='b' >{props.name}</Text>
+            <Text as='b' fontSize='xl'>{props.name}</Text>
         </Box>
     );
 }

@@ -1,0 +1,31 @@
+.profile {
+    margin: 0 auto;
+}
+
+.profile-details {
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    padding: 40px 30px;
+}
+
+.profile-details p {
+    display: block;
+}
+
+.profile-details div {
+    margin-top: 10px;
+}
+
+.profile-details a {
+    cursor: pointer
+}
+
+.profile-logo {
+    display: inline-block;
+    margin-left: 100px;
+    padding: 20px;
+    vertical-align: middle;
+    border-radius: 9999px;
+    background-color: black;
+}
