@@ -10,7 +10,7 @@ const colors = {
     'lightText2': '#7D8491',
     'darkText': '#FFF',
     'darkBg': '#070707',
-    'lightBg': '#CDF7F6',
+    'lightBg': '#f5f0f6ff',
     'buttonSecondary': '#070707'
   },
 }
