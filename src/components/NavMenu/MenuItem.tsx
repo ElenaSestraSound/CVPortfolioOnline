@@ -1,4 +1,4 @@
-import { Box, Text } from '@chakra-ui/react';
+import { Box, Link } from '@chakra-ui/react';
 import * as React from 'react';
 
 export interface IMenuItemProps {
@@ -8,7 +8,7 @@ export interface IMenuItemProps {
 export default function MenuItem(props: IMenuItemProps) {
     return (
         <Box display='inline-block'>
-            <Text as='b' fontSize='xl' color='brand.darkText'>{props.name}</Text>
+            <Link fontWeight={600} fontSize='xl' color='brand.darkText' href={`#${props.name}`}>{props.name}</Link>
         </Box>
     );
 }

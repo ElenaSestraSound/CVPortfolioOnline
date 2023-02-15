@@ -6,7 +6,7 @@ import classes from './Main.module.css'
 
 export default function Main() {
     return (
-        <Section bg='brand.darkBg'>
+        <Section bg='brand.darkBg' id='Home'>
             <Box className={classes.profile}>
                 <Box className={classes['profile-details']}>
                     <Text fontSize='3xl' as='b' color='brand.darkText'>Hello, I'm <Text color='brand.accent'>Elena</Text></Text>
