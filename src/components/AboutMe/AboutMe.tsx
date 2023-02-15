@@ -11,9 +11,8 @@ export default function AboutMe() {
         <Section bg='brand.lightBg'>
             <Flex className={classes['aboutme-container']}>
                 <Box className={classes['details-box']}>
-                    <Heading as='h2' size='2xl' color='brand.lightText1'>
-                        What you need to know
-                        about me
+                    <Heading as='h2' size='xl' color='brand.lightText1'>
+                        A little bit of me
                     </Heading>
                     <Text fontSize='2xl' fontWeight={600} color='brand.lightText2'>
                         Lorem ipsum dolor sit amet,

@@ -16,7 +16,7 @@ export default function HeaderMenu() {
     return (
         <Section bg='brand.darkBg' class={classes['menu-bar']}>
             <Box className={classes['header-title']}>
-                <Heading as='h1' color='brand.darkText'>ELENA BAÑÓN</Heading>
+                <Heading as='h1' color='brand.darkText'>Elena Bañón</Heading>
             </Box>
             <Spacer />
             <NavMenu items={menuItems} />

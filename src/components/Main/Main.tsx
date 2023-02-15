@@ -9,11 +9,12 @@ export default function Main() {
         <Section bg='brand.darkBg'>
             <Box className={classes.profile}>
                 <Box className={classes['profile-details']}>
-                    <Text fontSize='2xl' as='b' color='brand.darkText'>Hello, I'm <Text color='brand.accent'>Elena</Text></Text>
+                    <Text fontSize='3xl' as='b' color='brand.darkText'>Hello, I'm <Text color='brand.accent'>Elena</Text></Text>
                     <br />
-                    <Text fontSize='4xl' as='i' color='brand.darkText'>Full Stack developer</Text>
+                    <Text fontSize='5xl' as='i' color='brand.darkText'>Full Stack developer</Text>
                     <Box>
                         <Button
+                            size='lg'
                             bg='brand.buttonSecondary'
                             color='brand.darkText'
                             border='2px'
@@ -22,7 +23,7 @@ export default function Main() {
                             borderRadius='full'
                             mr={5}
                         >Hire Me</Button>
-                        <Button borderRadius='full' bg='brand.accent' color='brand.darkText'>Get CV</Button>
+                        <Button borderRadius='full' bg='brand.accent' color='brand.darkText' size='lg'>Get CV</Button>
                     </Box>
                 </Box>
                 <Box className={classes['profile-logo']}>
