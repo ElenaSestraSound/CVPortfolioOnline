@@ -4,9 +4,14 @@ import type { AppProps } from 'next/app'
 
 const colors = {
   brand: {
-    900: '#1a365d',
-    800: '#153e75',
-    700: '#2a69ac',
+    'highlight': '#A4031F',
+    'accent': '#FA8C0F ',
+    'lightText1': '#070707',
+    'lightText2': '#7D8491',
+    'darkText': '#FFF',
+    'darkBg': '#070707',
+    'lightBg': '#CDF7F6',
+    'buttonSecondary': '#070707'
   },
 }
 

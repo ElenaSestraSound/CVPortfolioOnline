@@ -6,19 +6,23 @@ import classes from './Main.module.css'
 
 export default function Main() {
     return (
-        <Section backgroundColor='red'>
+        <Section bg='brand.darkBg'>
             <Box className={classes.profile}>
                 <Box className={classes['profile-details']}>
-                    <Text fontSize='2xl' as='b'>Hello, I'm Elena</Text>
+                    <Text fontSize='2xl' as='b' color='brand.darkText'>Hello, I'm <Text color='brand.accent'>Elena</Text></Text>
                     <br />
-                    <Text fontSize='4xl' as='i'>Full Stack developer</Text>
+                    <Text fontSize='4xl' as='i' color='brand.darkText'>Full Stack developer</Text>
                     <Box>
                         <Button
+                            bg='brand.buttonSecondary'
+                            color='brand.darkText'
+                            border='2px'
+                            borderColor='brand.darkText'
                             as='a'
                             borderRadius='full'
                             mr={5}
                         >Hire Me</Button>
-                        <Button borderRadius='full'>Get CV</Button>
+                        <Button borderRadius='full' bg='brand.accent' color='brand.darkText'>Get CV</Button>
                     </Box>
                 </Box>
                 <Box className={classes['profile-logo']}>

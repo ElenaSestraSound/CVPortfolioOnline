@@ -1,5 +1,10 @@
+.Home {
+    padding: 300px 0 !important;
+}
+
 .profile {
     margin: 0 auto;
+    padding: 100px 0;
 }
 
 .profile-details {
@@ -9,8 +14,9 @@
     padding: 40px 30px;
 }
 
-.profile-details p {
-    display: block;
+
+.profile-details b p {
+    display: inline;
 }
 
 .profile-details div {
@@ -28,4 +34,10 @@
     vertical-align: middle;
     border-radius: 9999px;
     background-color: black;
+}
+
+@media screen and (max-width: 850px) {
+    .profile-logo {
+        display: none;
+    }
 }
