@@ -1,39 +1,34 @@
-.profile {
+import { css } from "@emotion/react";
+
+export const profile = css`
     margin: 0 auto;
     padding: 100px 0;
-}
+`
 
-.profile-details {
+export const profileDetails = css`
     display: inline-block;
     text-align: center;
     vertical-align: middle;
     padding: 40px 30px;
-}
 
+    div {
+        margin-top: 10px;
+    }
 
-.profile-details b p {
-    display: inline;
-}
+    a {
+        cursor: pointer
+    }
 
-.profile-details div {
-    margin-top: 10px;
-}
+    b p {
+        display: inline;
+    }
+`
 
-.profile-details a {
-    cursor: pointer
-}
-
-.profile-logo {
+export const profileLogo = css`
     display: inline-block;
     margin-left: 100px;
     padding: 20px;
     vertical-align: middle;
     border-radius: 9999px;
     background-color: black;
-}
-
-@media screen and (max-width: 850px) {
-    .profile-logo {
-        display: none;
-    }
-}
+`

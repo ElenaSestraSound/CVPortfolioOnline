@@ -1,16 +1,16 @@
 import { Heading, Text, Box, Flex, Center } from '@chakra-ui/react';
 import * as React from 'react';
+import * as styles from './styles'
 import Section from '../Layout/Section';
-import classes from './AboutMe.module.css'
 import Image from 'next/image';
 import pic from '@/assets/rocketEmail.png'
 
 
 export default function AboutMe() {
     return (
-        <Section bg='brand.lightBg' id='About Me'>
-            <Flex className={classes['aboutme-container']}>
-                <Box className={classes['details-box']}>
+        <Section bg='brand.lightBg' id='about-me'>
+            <Flex css={styles.aboutMeContainer}>
+                <Box css={styles.detailsBox}>
                     <Heading as='h2' size='xl' color='brand.lightText1'>
                         A little bit about me
                     </Heading>
@@ -30,7 +30,7 @@ export default function AboutMe() {
                         Nullam non lacus blandit, luctus lorem et, ornare risus.
                     </Text>
                 </Box>
-                <Center className={classes['image-box']}>
+                <Center css={styles.imageBox}>
                     <Image
                         src={pic}
                         alt="Picture of the author"

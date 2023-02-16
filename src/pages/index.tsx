@@ -1,7 +1,7 @@
 
-import AboutMe from '@/components/AboutMe/AboutMe'
-import Header from '@/components/Header/Header'
-import Main from '@/components/Main/Main'
+import AboutMe from '@/components/AboutMe'
+import Header from '@/components/Header'
+import Main from '@/components/Main'
 
 export default function Home() {
   return (
