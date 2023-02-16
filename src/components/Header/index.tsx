@@ -11,7 +11,7 @@ export default function HeaderMenu() {
                 <Heading as='h1' color='brand.darkText'>Elena Bañón</Heading>
             </Box>
             <Spacer css={styles.spacer} />
-            <NavMenu />
+            <NavMenu isRow={true} />
         </Section>
     );
 }

@@ -2,7 +2,7 @@ import '@/styles/globals.css'
 import { ChakraProvider, extendTheme } from '@chakra-ui/react'
 import type { AppProps } from 'next/app'
 
-const colors = {
+export const colors = {
   brand: {
     'highlight': '#A4031F',
     'accent': '#FA8C0F ',
