@@ -30,5 +30,5 @@ export const profileLogo = css`
     padding: 20px;
     vertical-align: middle;
     border-radius: 9999px;
-    background-color: black;
+    background-color: #070707;
 `
