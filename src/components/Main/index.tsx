@@ -1,7 +1,7 @@
 import { Box, Text, Button } from '@chakra-ui/react';
 import * as React from 'react';
 import * as styles from './styles'
-import EBLogo from '@/assets/logo/300/LogoMagnolia.svg'
+import EBLogo from '@/assets/logo/300/LogoWhite.svg'
 import Section from '../Layout/Section';
 
 export default function Main() {

@@ -16,7 +16,8 @@ export default function ExternalLinkBox({ items }: IExternalLinkBoxProps) {
                 fontWeight={600}
                 fontSize='xl'
                 color='brand.darkText'
-                href={item.url}>
+                href={item.url}
+                isExternal>
                 {item.name}
             </Link>)}
         </Box>
