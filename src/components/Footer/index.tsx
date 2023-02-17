@@ -5,7 +5,6 @@ import { Box, Center, Flex, Grid, GridItem, Spacer, Text } from '@chakra-ui/reac
 import NavMenu from '../DesignSystem/NavMenu';
 import ExternalLinkBox from './ExternalLinkBox';
 import { externalLinks } from './ExternalLinkBox/ExternalLinks';
-sdfsdf
 
 export interface IFooterProps {
 }
