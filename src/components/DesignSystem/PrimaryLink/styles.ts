@@ -1,6 +1,6 @@
 import { css } from '@emotion/react'
 
-export const menuItem = css`
+export const link = css`
     margin-left: 5px;
     padding: 5px;
 `

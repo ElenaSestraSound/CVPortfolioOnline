@@ -2,7 +2,7 @@ import { Box, Heading, Spacer } from '@chakra-ui/react';
 import * as React from 'react';
 import * as styles from './styles'
 import Section from '../Layout/Section';
-import NavMenu from '../NavMenu';
+import NavMenu from '../DesignSystem/NavMenu';
 
 export default function HeaderMenu() {
     return (

@@ -2,9 +2,10 @@ import * as React from 'react';
 import { colors } from '@/pages/_app';
 import EBLogo from '@/assets/logo/150/LogoWhite.svg'
 import { Box, Center, Flex, Grid, GridItem, Spacer, Text } from '@chakra-ui/react';
-import NavMenu from '../NavMenu';
+import NavMenu from '../DesignSystem/NavMenu';
 import ExternalLinkBox from './ExternalLinkBox';
 import { externalLinks } from './ExternalLinkBox/ExternalLinks';
+import FooterMenu from './FooterMenu';
 
 export interface IFooterProps {
 }
@@ -25,7 +26,7 @@ export default function Footer(props: IFooterProps) {
                     </Center>
                 </GridItem>
                 <GridItem rowSpan={2} colSpan={1} >
-                    <NavMenu />
+                    <FooterMenu />
                 </GridItem>
                 <GridItem rowSpan={2} colSpan={1} >
                     <ExternalLinkBox items={externalLinks} />
