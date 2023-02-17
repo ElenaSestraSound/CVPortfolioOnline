@@ -2,7 +2,7 @@ import { Heading, Text, Box, Flex, Center, Icon } from '@chakra-ui/react';
 import { ChevronRightIcon } from '@chakra-ui/icons'
 import * as React from 'react';
 import * as styles from './styles'
-import Section from '../Layout/Section';
+import Section from '../DesignSystem/Section';
 import Image from 'next/image';
 import pic from '@/assets/rocketEmail.png'
 import SecondaryLink from '../DesignSystem/SecondaryLink';

@@ -4,7 +4,7 @@ import * as styles from './styles'
 import EBLogo from '@/assets/logo/300/LogoWhite.svg'
 import EBLogoSmall from '@/assets/logo/150/LogoWhite.svg'
 import EBLogoOrange from '@/assets/logo/300/LogoOrange.svg'
-import Section from '../Layout/Section';
+import Section from '../DesignSystem/Section';
 import { useEffect, useState } from 'react';
 
 export default function Main() {
