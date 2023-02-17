@@ -5,7 +5,6 @@ import { Box, Center, Flex, Grid, GridItem, Spacer, Text } from '@chakra-ui/reac
 import NavMenu from '../DesignSystem/NavMenu';
 import ExternalLinkBox from './ExternalLinkBox';
 import { externalLinks } from './ExternalLinkBox/ExternalLinks';
-import FooterMenu from './FooterMenu';
 
 export interface IFooterProps {
 }
@@ -26,7 +25,7 @@ export default function Footer(props: IFooterProps) {
                     </Center>
                 </GridItem>
                 <GridItem rowSpan={2} colSpan={1} >
-                    <FooterMenu />
+                    <NavMenu linkDisplay='block' />
                 </GridItem>
                 <GridItem rowSpan={2} colSpan={1} >
                     <ExternalLinkBox items={externalLinks} />
