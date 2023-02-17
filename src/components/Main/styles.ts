@@ -3,6 +3,11 @@ import { css } from "@emotion/react";
 export const profile = css`
     margin: 0 auto;
     padding: 100px 0;
+
+    @media screen and (max-width: 800px) {
+        display: flex;
+        flex-direction: column-reverse
+    }
 `
 
 export const profileDetails = css`
@@ -10,17 +15,32 @@ export const profileDetails = css`
     text-align: center;
     vertical-align: middle;
     padding: 40px 30px;
-
     div {
         margin-top: 10px;
     }
-
     a {
         cursor: pointer
     }
-
     b p {
         display: inline;
+    }
+
+    @media screen and (max-width: 991px) {
+        >b {
+            font-size: 20px;
+        }
+        i {
+            font-size: 30px;
+        }
+    }
+
+    @media screen and (max-width: 480px) {
+        >b {
+            font-size: 16px;
+        }
+        i {
+            font-size: 24px;
+        }
     }
 `
 
@@ -31,4 +51,9 @@ export const profileLogo = css`
     vertical-align: middle;
     border-radius: 9999px;
     background-color: #070707;
+
+    @media screen and (max-width: 800px) {
+        margin-left: 0
+    }
+
 `

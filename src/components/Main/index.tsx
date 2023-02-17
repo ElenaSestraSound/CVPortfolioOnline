@@ -2,9 +2,27 @@ import { Box, Text, Button } from '@chakra-ui/react';
 import * as React from 'react';
 import * as styles from './styles'
 import EBLogo from '@/assets/logo/300/LogoWhite.svg'
+import EBLogoSmall from '@/assets/logo/150/LogoWhite.svg'
+import EBLogoOrange from '@/assets/logo/300/LogoOrange.svg'
 import Section from '../Layout/Section';
+import { useEffect, useState } from 'react';
 
 export default function Main() {
+    // let Logo = EBLogo
+    // if (typeof window !== 'undefined') {
+    //     const [windowSize, setWindowSize] = useState<number>(window.innerWidth);
+
+    //     useEffect(() => {
+    //         if (windowSize > 800) {
+    //             console.log("Window Size is greater than 800. Setting White logo")
+    //             Logo = EBLogo
+    //         } else {
+    //             console.log("Window Size is smaller than 800. Setting Orange logo")
+    //             Logo = EBLogoOrange
+    //         }
+    //     }, [windowSize])
+    // }
+    // console.log("Returning unicorns")
     return (
         <Section bg='brand.darkBg' id='home'>
             <Box css={styles.profile}>
@@ -14,7 +32,7 @@ export default function Main() {
                     <Text fontSize='5xl' as='i' color='brand.darkText'>Full Stack developer</Text>
                     <Box>
                         <Button
-                            size='lg'
+                            size={['sm', 'md', 'md', 'lg']}
                             bg='brand.buttonSecondary'
                             color='brand.darkText'
                             border='2px'
@@ -24,7 +42,13 @@ export default function Main() {
                             borderRadius='full'
                             mr={5}
                         >Hire Me</Button>
-                        <Button borderRadius='full' bg='brand.accent' color='brand.darkText' size='lg'>Get CV</Button>
+                        <Button
+                            borderRadius='full'
+                            bg='brand.accent'
+                            color='brand.darkText'
+                            size={['sm', 'md', 'md', 'lg']}>
+                            Get CV
+                        </Button>
                     </Box>
                 </Box>
                 <Box css={styles.profileLogo}>
