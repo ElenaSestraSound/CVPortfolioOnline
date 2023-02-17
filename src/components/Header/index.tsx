@@ -6,9 +6,9 @@ import NavMenu from '../DesignSystem/NavMenu';
 
 export default function HeaderMenu() {
     return (
-        <Section bg='brand.darkBg' css={styles.menuBar}>
+        <Section bg='brand.backgroundPrimary' css={styles.menuBar}>
             <Box css={styles.headerTitle}>
-                <Heading as='h1' color='brand.darkText'>Elena Bañón</Heading>
+                <Heading as='h1' color='brand.textTerciary'>Elena Bañón</Heading>
             </Box>
             <Spacer css={styles.spacer} />
             <NavMenu />

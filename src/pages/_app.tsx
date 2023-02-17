@@ -6,11 +6,11 @@ export const colors = {
   brand: {
     'highlight': '#A4031F',
     'accent': '#FA8C0F ',
-    'lightText1': '#070707',
-    'lightText2': '#7D8491',
-    'darkText': '#FFF',
-    'darkBg': '#070707',
-    'lightBg': '#f5f0f6ff',
+    'textPrimary': '#070707',
+    'textSecondary': '#7D8491',
+    'textTerciary': '#FFF',
+    'backgroundPrimary': '#070707',
+    'backgroundSecondary': '#f5f0f6ff',
     'buttonSecondary': '#070707'
   },
 }

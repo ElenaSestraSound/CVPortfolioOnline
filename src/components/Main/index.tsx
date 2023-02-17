@@ -24,28 +24,30 @@ export default function Main() {
     // }
     // console.log("Returning unicorns")
     return (
-        <Section bg='brand.darkBg' id='home'>
+        <Section bg='brand.backgroundPrimary' id='home'>
             <Box css={styles.profile}>
                 <Box css={styles.profileDetails}>
-                    <Text fontSize='3xl' as='b' color='brand.darkText'>Hello, I'm <Text color='brand.accent'>Elena</Text></Text>
+                    <Text fontSize='3xl' as='b' color='brand.textTerciary'>Hello, I'm <Text color='brand.accent'>Elena</Text></Text>
                     <br />
-                    <Text fontSize='5xl' as='i' color='brand.darkText'>Full Stack developer</Text>
+                    <Text fontSize='5xl' as='i' color='brand.textTerciary'>Full Stack developer</Text>
                     <Box>
                         <Button
+                            _hover={{ 'color': 'brand.textPrimary', 'backgroundColor': 'brand.backgroundSecondary' }}
                             size={['sm', 'md', 'md', 'lg']}
                             bg='brand.buttonSecondary'
-                            color='brand.darkText'
+                            color='brand.textTerciary'
                             border='2px'
-                            borderColor='brand.darkText'
+                            borderColor='brand.textTerciary'
                             as='a'
                             href='#Contact Me'
                             borderRadius='full'
                             mr={5}
                         >Hire Me</Button>
                         <Button
+                            _hover={{ 'color': 'brand.textPrimary', 'backgroundColor': 'brand.backgroundSecondary' }}
                             borderRadius='full'
                             bg='brand.accent'
-                            color='brand.darkText'
+                            color='brand.textTerciary'
                             size={['sm', 'md', 'md', 'lg']}>
                             Get CV
                         </Button>

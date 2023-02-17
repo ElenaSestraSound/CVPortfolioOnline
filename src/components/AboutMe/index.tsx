@@ -10,22 +10,22 @@ import SecondaryLink from '../DesignSystem/SecondaryLink';
 
 export default function AboutMe() {
     return (
-        <Section bg='brand.lightBg' id='about-me'>
+        <Section bg='brand.backgroundSecondary' id='about-me'>
             <Flex css={styles.aboutMeContainer}>
                 <Box css={styles.detailsBox}>
-                    <Heading as='h2' size='xl' color='brand.lightText1'>
+                    <Heading as='h2' size='xl' color='brand.textPrimary'>
                         A little bit about me
                     </Heading>
-                    <Text fontSize='2xl' fontWeight={600} color='brand.lightText2'>
+                    <Text fontSize='2xl' fontWeight={600} color='brand.textSecondary'>
                         I started my codding journey back in 2013 with Java and Android and since then I've never stopped.
                     </Text>
                     <br />
-                    <Text fontSize='2xl' fontWeight={600} color='brand.lightText2'>
+                    <Text fontSize='2xl' fontWeight={600} color='brand.textSecondary'>
                         Even though I studied to be a mobile developer I ended up working in frontend at an online newspaper as my first developer job.
                         I mastered SCSS and had a pretty deep dive into JavaScript.
                     </Text>
                     <br />
-                    <Text fontSize='2xl' fontWeight={600} color='brand.lightText2'>
+                    <Text fontSize='2xl' fontWeight={600} color='brand.textSecondary'>
                         Now I'm a TypeScript enthusiast building React applications and looking forward to keep learning and making creative works.
                     </Text>
                     <br />

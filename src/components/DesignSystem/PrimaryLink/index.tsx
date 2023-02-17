@@ -16,7 +16,7 @@ export default function PrimaryLink({ id, name, isExternal, display = 'block' }:
             _activeLink={{ 'color': 'brand.accent' }}
             fontWeight={600}
             fontSize='xl'
-            color='brand.darkText'
+            color='brand.textTerciary'
             href={`#${id}`}
             isExternal={isExternal}>
             {name}

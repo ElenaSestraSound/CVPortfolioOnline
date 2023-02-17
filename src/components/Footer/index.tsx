@@ -1,5 +1,4 @@
 import * as React from 'react';
-import { colors } from '@/pages/_app';
 import EBLogo from '@/assets/logo/150/LogoWhite.svg'
 import { Box, Center, Flex, Grid, GridItem, Spacer, Text } from '@chakra-ui/react';
 import NavMenu from '../DesignSystem/NavMenu';
@@ -11,7 +10,7 @@ export interface IFooterProps {
 
 export default function Footer(props: IFooterProps) {
     return (
-        <Box bg={colors.brand.darkBg} p='40px'>
+        <Box bg='brand.backgroundPrimary' p='40px'>
             <Grid
                 margin='0 auto'
                 maxW={1240}
@@ -35,7 +34,7 @@ export default function Footer(props: IFooterProps) {
                         Icons Icons
                     </Box>
                     <Spacer />
-                    <Text fontSize='lg' fontWeight={600} color={colors.brand.darkText} p='5px'>Copyright © 2023 Elena Bañón </Text>
+                    <Text fontSize='lg' fontWeight={600} color='brand.textTerciary' p='5px'>Copyright © 2023 Elena Bañón </Text>
                 </GridItem>
             </Grid >
         </Box >

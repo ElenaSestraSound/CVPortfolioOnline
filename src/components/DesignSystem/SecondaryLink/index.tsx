@@ -17,7 +17,7 @@ export default function SecondaryLink({ id, name, isExternal, display = 'block',
             _activeLink={{ 'color': 'brand.accent' }}
             fontWeight={600}
             fontSize='xl'
-            color='brand.lightText1'
+            color='brand.textPrimary'
             href={`#${id}`}
             isExternal={isExternal}>
             {name}
