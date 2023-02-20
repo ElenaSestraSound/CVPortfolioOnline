@@ -1,7 +1,7 @@
 import { css } from "@emotion/react";
 
 export const aboutMeContainer = css`
-    padding: 100px 0px
+    padding: 150px 0px
 `
 export const imageBox = css`
     img {

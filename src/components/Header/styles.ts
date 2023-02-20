@@ -19,5 +19,6 @@ export const spacer = css`
 
 export const menuBar = css`
     position: sticky;
-    top: 0
+    top: 0;
+    z-index: 99999
 `

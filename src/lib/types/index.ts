@@ -7,3 +7,10 @@ export type ExternalLinkItem = {
     name: string,
     url: string
 }
+
+export type TableContentDetail = {
+    title: string,
+    description: string,
+    place: string
+    date: string
+}
