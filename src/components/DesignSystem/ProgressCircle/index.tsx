@@ -9,7 +9,7 @@ export interface IProgressCircleProps {
 
 export default function ProgressCircle({ children, value }: IProgressCircleProps) {
     return (
-        <Box w={150} h={150}>
+        <Box w={150} h={150} display='inline-block' mr={15} ml={15} mb={30}>
             <CircularProgressbarWithChildren
                 value={value}
                 styles={{

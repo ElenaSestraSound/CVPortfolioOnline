@@ -14,3 +14,7 @@ export type TableContentDetail = {
     place: string
     date: string
 }
+export type SkillDetails = {
+    icon: any,
+    value: number
+}
