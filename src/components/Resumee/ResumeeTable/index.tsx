@@ -1,5 +1,4 @@
 import { Tabs, TabList, Tab, TabPanels, TabPanel, Box, Text } from '@chakra-ui/react';
-import EducationIcon from '@/assets/Resumee/education.svg'
 import * as React from 'react';
 import * as styles from './styles'
 import TableContent from './TableContent';

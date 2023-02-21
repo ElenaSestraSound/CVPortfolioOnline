@@ -1,10 +1,10 @@
 import { SkillDetails } from "@/lib/types";
-import ReactLogo from '@/assets/tecnologies/react.svg'
-import ReduxLogo from '@/assets/tecnologies/redux.svg'
-import JSLogo from '@/assets/tecnologies/js.svg'
-import TYSLogo from '@/assets/tecnologies/tys.svg'
-import NextLogo from '@/assets/tecnologies/next.svg'
-import CSSLogo from '@/assets/tecnologies/css3.svg'
+import ReactLogo from '@/assets/tecnologies/#FFF/react.svg'
+import ReduxLogo from '@/assets/tecnologies/#FFF/redux.svg'
+import JSLogo from '@/assets/tecnologies/#FFF/js.svg'
+import TYSLogo from '@/assets/tecnologies/#FFF/tys.svg'
+import NextLogo from '@/assets/tecnologies/#FFF/next.svg'
+import CSSLogo from '@/assets/tecnologies/#FFF/css3.svg'
 
 export const SkillsDetails: SkillDetails[] = [
     { icon: <ReactLogo />, value: 80, name: 'React' },

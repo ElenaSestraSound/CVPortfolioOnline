@@ -18,9 +18,7 @@ export const profileDetails = css`
     div {
         margin-top: 10px;
     }
-    a {
-        cursor: pointer
-    }
+    
     b p {
         display: inline;
     }
