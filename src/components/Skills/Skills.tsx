@@ -7,10 +7,10 @@ import NextLogo from '@/assets/tecnologies/next.svg'
 import CSSLogo from '@/assets/tecnologies/css3.svg'
 
 export const SkillsDetails: SkillDetails[] = [
-    { icon: <ReactLogo />, value: 80 },
-    { icon: <ReduxLogo />, value: 60 },
-    { icon: <JSLogo />, value: 90 },
-    { icon: <TYSLogo />, value: 70 },
-    { icon: <NextLogo />, value: 60 },
-    { icon: <CSSLogo />, value: 95 },
+    { icon: <ReactLogo />, value: 80, name: 'React' },
+    { icon: <ReduxLogo />, value: 60, name: 'Redux' },
+    { icon: <JSLogo />, value: 90, name: 'JavaScript' },
+    { icon: <TYSLogo />, value: 70, name: 'TypeScript' },
+    { icon: <NextLogo />, value: 60, name: 'Next' },
+    { icon: <CSSLogo />, value: 95, name: 'CSS3' },
 ]

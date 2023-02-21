@@ -16,5 +16,6 @@ export type TableContentDetail = {
 }
 export type SkillDetails = {
     icon: any,
-    value: number
+    value: number,
+    name: string
 }

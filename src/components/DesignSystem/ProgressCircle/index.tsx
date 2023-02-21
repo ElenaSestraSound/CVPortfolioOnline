@@ -1,19 +1,19 @@
-import { Box } from '@chakra-ui/react';
+import { Box, Text } from '@chakra-ui/react';
 import * as React from 'react';
 import { CircularProgressbarWithChildren } from 'react-circular-progressbar';
 
 export interface IProgressCircleProps {
-    value: number
+    name: string,
+    value: number,
     children: React.ReactNode
 }
 
-export default function ProgressCircle({ children, value }: IProgressCircleProps) {
+export default function ProgressCircle({ children, value, name }: IProgressCircleProps) {
     return (
-        <Box w={150} h={150} display='inline-block' mr={15} ml={15} mb={30}>
+        <Box w={150} h={150} display='inline-block' mr={15} ml={15} mb={15}>
             <CircularProgressbarWithChildren
                 value={value}
                 styles={{
-                    // Customize the root svg element
                     root: {},
                     path: {
                         stroke: `#FA8C0F`,
@@ -33,7 +33,8 @@ export default function ProgressCircle({ children, value }: IProgressCircleProps
                 }}
             >
                 {children}
+                <Text color='brand.textTerciary' fontSize='xs' p={1} fontWeight={600}>{name.toUpperCase()}</Text>
             </CircularProgressbarWithChildren>
-        </Box>
+        </Box >
     );
 }

@@ -20,9 +20,8 @@ export default function Skills(props: ISkillsProps) {
             <Box w='100%' maxW='700px' m='0 auto'>
                 <Heading as='h2' size='xl' color='brand.textTerciary' w='100%' textAlign='center'>Skills</Heading>
                 <Box p='40px' textAlign='center'>
-                    {SkillsDetails.map(skill => <ProgressCircle value={skill.value}>{skill.icon}</ProgressCircle>)}
+                    {SkillsDetails.map(skill => <ProgressCircle value={skill.value} name={skill.name}>{skill.icon}</ProgressCircle>)}
                 </Box>
-
             </Box>
         </Section>
     );
