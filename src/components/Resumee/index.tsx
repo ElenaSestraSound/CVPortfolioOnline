@@ -2,6 +2,7 @@ import { Box } from '@chakra-ui/react';
 import * as React from 'react';
 import Heading from '../DesignSystem/Heading';
 import ResumeeTable from './ResumeeTable';
+import * as styles from './styles'
 
 export interface IResumeeProps {
 }
@@ -15,7 +16,7 @@ export default function Resumee(props: IResumeeProps) {
                 </Box>
             </Box>
             <Box bg='brand.backgroundPrimary'>
-                <Box margin='0 auto' maxW={1240} w='100%' padding='0 20px' h='400px'>
+                <Box margin='0 auto' maxW={1240} w='100%' padding='0 20px' css={styles.blackBakground}>
                     <ResumeeTable />
                 </Box>
             </Box>

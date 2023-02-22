@@ -16,12 +16,12 @@ export default function ResumeeTable() {
                             borderRadius='30px 0 0 0;'
                             _selected={{ 'color': 'brand.accent', 'borderColor': 'brand.accent' }}
                             _hover={{ 'color': 'brand.accent' }}
-                        ><Text fontSize='2xl' fontWeight={600}>Work History</Text></Tab>
+                        ><Text fontSize='lg' fontWeight={600}>Work History</Text></Tab>
                         <Tab
                             borderRadius='0 30px 0 0;'
                             _selected={{ 'color': 'brand.accent', 'borderColor': 'brand.accent' }}
                             _hover={{ 'color': 'brand.accent' }}
-                        ><Text fontSize='2xl' fontWeight={600}>Studies</Text> </Tab>
+                        ><Text fontSize='lg' fontWeight={600}>Studies</Text> </Tab>
                     </TabList>
                     <TabPanels>
                         <TabPanel>
