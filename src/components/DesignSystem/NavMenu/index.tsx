@@ -1,6 +1,6 @@
 import { Link } from '@chakra-ui/react';
 import * as React from 'react';
-import PrimaryLink from '../PrimaryLink';
+import PrimaryLink from '../Links/PrimaryLink';
 import { NavMenuItems } from './NavMenuItems'
 
 export interface INavMenuProps {
@@ -10,7 +10,7 @@ export interface INavMenuProps {
 export default function NavMenu({ linkDisplay = 'inline-block' }: INavMenuProps) {
     return (
         <nav>
-            {NavMenuItems.map(item => <PrimaryLink key={item.id} id={item.id} name={item.name} isExternal={false} display={linkDisplay} />)}
+            {NavMenuItems.map(item => <PrimaryLink key={item.id} to={item.id} isExternal={false} display={linkDisplay}>{item.name}</PrimaryLink>)}
         </nav>
     );
 }

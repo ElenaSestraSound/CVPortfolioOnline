@@ -3,14 +3,14 @@ import * as React from 'react';
 import * as styles from './styles'
 
 export interface ISecondaryLinkProps {
-    id: string,
-    name: string,
+    to: string,
     isExternal: boolean,
     display?: string,
-    children?: React.ReactElement
+    children?: React.ReactNode
 }
 
-export default function SecondaryLink({ id, name, isExternal, display = 'block', children }: ISecondaryLinkProps) {
+export default function SecondaryLink({ to, isExternal, display = 'block', children }: ISecondaryLinkProps) {
+    const href = !isExternal ? `#${to}` : to
     return (
         <Link css={styles.link} display={display}
             _hover={{ 'color': 'brand.accent' }}
@@ -18,9 +18,8 @@ export default function SecondaryLink({ id, name, isExternal, display = 'block',
             fontWeight={600}
             fontSize='xl'
             color='brand.textPrimary'
-            href={`#${id}`}
+            href={href}
             isExternal={isExternal}>
-            {name}
             {children}
         </Link>
     );

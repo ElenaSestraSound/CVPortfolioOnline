@@ -3,7 +3,7 @@ import * as React from 'react';
 import * as styles from './styles'
 import TableContent from './TableContent';
 import { Jobs, Studies } from './TableContentData';
-import TerciaryLink from '@/components/DesignSystem/TerciaryLink';
+import TerciaryLink from '@/components/DesignSystem/Links/TerciaryLink';
 import { ChevronRightIcon } from '@chakra-ui/icons';
 
 export default function ResumeeTable() {
@@ -34,7 +34,7 @@ export default function ResumeeTable() {
                 </Tabs>
             </Box>
             <Box ml='36px' mt='20px'>
-                <TerciaryLink id='cv.com' name={'Download CV Here'} isExternal={false}><ChevronRightIcon /></TerciaryLink>
+                <TerciaryLink to='cv.com' isExternal={false}>Download CV Here<ChevronRightIcon /></TerciaryLink>
             </Box>
         </Box>
     );

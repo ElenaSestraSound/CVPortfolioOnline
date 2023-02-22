@@ -3,13 +3,14 @@ import * as React from 'react';
 import * as styles from './styles'
 
 export interface IPrimaryLinkProps {
-    id: string,
-    name: string,
+    to: string,
     isExternal: boolean,
-    display?: string
+    display?: string,
+    children: React.ReactNode
 }
 
-export default function PrimaryLink({ id, name, isExternal, display = 'block' }: IPrimaryLinkProps) {
+export default function PrimaryLink({ to, children, isExternal, display = 'block' }: IPrimaryLinkProps) {
+    const href = !isExternal ? `#${to}` : to
     return (
         <Link css={styles.link} display={display}
             _hover={{ 'color': 'brand.accent' }}
@@ -17,9 +18,9 @@ export default function PrimaryLink({ id, name, isExternal, display = 'block' }:
             fontWeight={600}
             fontSize='xl'
             color='brand.textTerciary'
-            href={`#${id}`}
+            href={href}
             isExternal={isExternal}>
-            {name}
+            {children}
         </Link>
     );
 }

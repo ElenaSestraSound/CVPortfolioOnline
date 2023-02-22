@@ -1,6 +1,6 @@
-import PrimaryLink from '@/components/DesignSystem/PrimaryLink';
+import PrimaryLink from '@/components/DesignSystem/Links/PrimaryLink';
 import { ExternalLinkItem } from '@/lib/types';
-import { Box, Link, ListItem, UnorderedList } from '@chakra-ui/react';
+import { ListItem, UnorderedList } from '@chakra-ui/react';
 import * as React from 'react';
 import * as styles from './styles'
 
@@ -13,7 +13,7 @@ export default function ExternalLinkBox({ items }: IExternalLinkBoxProps) {
         <UnorderedList>
             {items.map(item =>
                 <ListItem listStyleType='none' key={item.name}>
-                    <PrimaryLink id={item.url} name={item.name} isExternal={true} />
+                    <PrimaryLink to={item.url} isExternal={true}>{item.name}</PrimaryLink>
                 </ListItem>)}
         </UnorderedList>
     );

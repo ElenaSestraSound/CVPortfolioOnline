@@ -5,7 +5,7 @@ import * as styles from './styles'
 import Section from '../DesignSystem/Section';
 import Image from 'next/image';
 import pic from '@/assets/rocketEmail.png'
-import SecondaryLink from '../DesignSystem/SecondaryLink';
+import SecondaryLink from '../DesignSystem/Links/SecondaryLink';
 
 
 export default function AboutMe() {
@@ -29,7 +29,7 @@ export default function AboutMe() {
                         Now I'm a TypeScript enthusiast building React applications and looking forward to keep learning and making creative works.
                     </Text>
                     <br />
-                    <SecondaryLink id='projects' name='Checkout my React projects here' isExternal={false} ><ChevronRightIcon /></SecondaryLink>
+                    <SecondaryLink to='projects' isExternal={false} > Checkout my React projects here<ChevronRightIcon /></SecondaryLink>
                 </Box>
                 <Center css={styles.imageBox}>
                     <Image
