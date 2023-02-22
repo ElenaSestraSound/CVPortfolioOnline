@@ -11,6 +11,7 @@ export const colors = {
     'textTerciary': '#FFF',
     'backgroundPrimary': '#070707',
     'backgroundSecondary': '#f5f0f6ff',
+    'backgroundTerciary': '#fff',
     'buttonSecondary': '#070707'
   },
 }

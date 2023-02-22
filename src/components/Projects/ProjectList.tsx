@@ -5,6 +5,7 @@ import TypeLogo from '@/assets/tecnologies/#070707/tys.svg'
 import ChakraLogo from '@/assets/tecnologies/#070707/chakra.svg'
 import ReduxLogo from '@/assets/tecnologies/#070707/redux.svg'
 import CSSLogo from '@/assets/tecnologies/#070707/css3.svg'
+import ReactLogo from '@/assets/tecnologies/#070707/react.svg'
 
 export const ProjectList: ProjectDetails[] = [
     {
@@ -23,15 +24,15 @@ export const ProjectList: ProjectDetails[] = [
             [{ name: 'Order Food App url', url: '#' },
             { name: 'GitHub Repository', url: 'https://github.com/ElenaSestraSound/order-food-app' }],
         image: portfolioImg,
-        tecnologies: [<NextLogo />, <TypeLogo />, <ChakraLogo />]
+        tecnologies: [<ReactLogo />, <TypeLogo />, <ChakraLogo />]
     },
-    {
-        name: 'Personal Blog',
-        description: 'This is my personal blog page where I write about coding.',
-        links:
-            [{ name: 'Personal Blog url', url: '#' },
-            { name: 'GitHub Repository', url: '#' }],
-        image: portfolioImg,
-        tecnologies: [<NextLogo />, <TypeLogo />, <ChakraLogo />]
-    },
+    // {
+    //     name: 'Personal Blog',
+    //     description: 'This is my personal blog page where I write about coding.',
+    //     links:
+    //         [{ name: 'Personal Blog url', url: '#' },
+    //         { name: 'GitHub Repository', url: '#' }],
+    //     image: portfolioImg,
+    //     tecnologies: [<NextLogo />, <TypeLogo />, <CSSLogo />]
+    // },
 ]

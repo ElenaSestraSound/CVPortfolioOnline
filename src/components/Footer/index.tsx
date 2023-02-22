@@ -5,6 +5,10 @@ import NavMenu from '../DesignSystem/NavMenu';
 import ExternalLinkBox from './ExternalLinkBox';
 import { externalLinks } from './ExternalLinkBox/ExternalLinks';
 
+import NextLogo from '@/assets/tecnologies/#FFF/next.svg'
+import ReduxLogo from '@/assets/tecnologies/#FFF/redux.svg'
+import ChakraLogo from '@/assets/tecnologies/#FFF/chakra.svg'
+
 export interface IFooterProps {
 }
 
@@ -30,8 +34,16 @@ export default function Footer(props: IFooterProps) {
                     <ExternalLinkBox items={externalLinks} />
                 </GridItem>
                 <GridItem colSpan={2} rowSpan={2} display='flex' flexDirection='column' textAlign='center'>
-                    <Box >
-                        Icons Icons
+                    <Box>
+                        <Box display='inline-block' mr='10px'>
+                            <NextLogo />
+                        </Box>
+                        <Box display='inline-block' ml='10px' mr='10px'>
+                            <ReduxLogo />
+                        </Box>
+                        <Box display='inline-block' ml='10px'>
+                            <ChakraLogo />
+                        </Box>
                     </Box>
                     <Spacer />
                     <Text fontSize='lg' fontWeight={600} color='brand.textTerciary' p='5px'>Copyright © 2023 Elena Bañón </Text>

@@ -20,3 +20,28 @@ export const Jobs: TableContentDetail[] = [
         date: 'Jan 2016 - Feb 2017'
     }
 ]
+
+export const Studies: TableContentDetail[] = [
+    {
+        title: 'SELF-TAUGHT / ONLINE COURSES',
+        place: 'Full-Stack Web development  - Berlin, Germany',
+        description: 'Focused on studying latests technologies and frameworks for web development: React, Nodejs, Nestjs, Express, MongoDB with both, JavaScript and TypeScript.',
+        date: 'Jan 2023 - Current'
+    },
+    {
+        title: 'ONLINE MUSIC PRODUCTION DEGREE',
+        place: 'PointBlank Music School - London, UK',
+        date: 'Mar 2019 - Dec 2021'
+    },
+    {
+        title: 'Multiplatform Applications Development',
+        place: 'I.E.S. Francisco de Quevedo',
+        description: "Degree in software development: OOP with Java, Android development, Web development with HTML, CSS, JavaScript",
+        date: 'Sep 2012 - Jun 2015'
+    },
+    {
+        title: 'Audiovisual comunication degree',
+        place: 'Universidad Rey Juan Carlos - Madrid, Spain',
+        date: 'Sep 2012 - Jun 2015'
+    },
+]

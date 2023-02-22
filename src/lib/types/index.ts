@@ -12,7 +12,7 @@ export type ExternalLinkItem = {
 
 export type TableContentDetail = {
     title: string,
-    description: string,
+    description?: string,
     place: string
     date: string
 }

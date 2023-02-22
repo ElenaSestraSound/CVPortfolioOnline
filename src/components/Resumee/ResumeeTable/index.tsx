@@ -2,15 +2,15 @@ import { Tabs, TabList, Tab, TabPanels, TabPanel, Box, Text } from '@chakra-ui/r
 import * as React from 'react';
 import * as styles from './styles'
 import TableContent from './TableContent';
-import { Jobs } from './Jobs';
+import { Jobs, Studies } from './TableContentData';
 import TerciaryLink from '@/components/DesignSystem/TerciaryLink';
 import { ChevronRightIcon } from '@chakra-ui/icons';
 
 export default function ResumeeTable() {
     return (
         <Box css={styles.resumeeTable} maxW='900px' margin='0 auto'>
-            <Box backgroundColor='brand.backgroundSecondary' color='brand.textPrimary' borderRadius='30px' >
-                <Tabs isFitted>
+            <Box backgroundColor='brand.backgroundTerciary' color='brand.textPrimary' borderRadius='30px'>
+                <Tabs isFitted boxShadow='0 1px 3px 0 rgba(0, 0, 0, 0.1),0 1px 2px 0 rgba(0, 0, 0, 0.06)' borderRadius='30px'>
                     <TabList mb='1em'>
                         <Tab
                             borderRadius='30px 0 0 0;'
@@ -28,7 +28,7 @@ export default function ResumeeTable() {
                             <TableContent details={Jobs}></TableContent>
                         </TabPanel>
                         <TabPanel>
-                            <TableContent details={Jobs}></TableContent>
+                            <TableContent details={Studies}></TableContent>
                         </TabPanel>
                     </TabPanels>
                 </Tabs>
