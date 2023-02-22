@@ -24,20 +24,8 @@ export const profileDetails = css`
     }
 
     @media screen and (max-width: 991px) {
-        >b {
-            font-size: 20px;
-        }
         i {
             font-size: 30px;
-        }
-    }
-
-    @media screen and (max-width: 480px) {
-        >b {
-            font-size: 16px;
-        }
-        i {
-            font-size: 24px;
         }
     }
 `

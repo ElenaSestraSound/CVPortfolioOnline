@@ -33,13 +33,13 @@ export default function Main() {
                     <Box>
                         <Button
                             _hover={{ 'color': 'brand.textPrimary', 'backgroundColor': 'brand.backgroundSecondary' }}
-                            size={['sm', 'md', 'md', 'lg']}
+                            size={['lg']}
                             bg='brand.buttonSecondary'
                             color='brand.textTerciary'
                             border='2px'
                             borderColor='brand.textTerciary'
                             as='a'
-                            href='#Contact Me'
+                            href='#contact-me'
                             borderRadius='full'
                             mr={5}
                         >Hire Me</Button>
@@ -48,7 +48,7 @@ export default function Main() {
                             borderRadius='full'
                             bg='brand.accent'
                             color='brand.textTerciary'
-                            size={['sm', 'md', 'md', 'lg']}>
+                            size={['lg']}>
                             Get CV
                         </Button>
                     </Box>

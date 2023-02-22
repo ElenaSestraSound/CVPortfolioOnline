@@ -31,11 +31,12 @@ export default function Project({ project }: IProjectProps) {
                         _hover={{ 'color': 'brand.textTerciary', 'backgroundColor': 'brand.accent' }}
                         borderRadius='full'
                         bg='brand.textTerciary'
-                        as='a'
                         border='2px'
                         borderColor='brand.accent'
                         color='brand.accent'
+                        as='a'
                         href={project.links[0].url}
+                        target='_blank'
                         size={['md']}
                         mr="30px">
                         Check Site
@@ -49,6 +50,7 @@ export default function Project({ project }: IProjectProps) {
                         borderColor='brand.textPrimary'
                         as='a'
                         href={project.links[1].url}
+                        target='_blank'
                         borderRadius='full'
                         alignSelf='end'
                     >Check Code</Button>
