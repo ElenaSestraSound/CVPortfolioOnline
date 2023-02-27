@@ -1,19 +1,19 @@
 import PrimaryLink from '@/components/DesignSystem/Links/PrimaryLink';
-import { ExternalLinkItem } from '@/lib/types';
+import { LinkItem, NavMenuItem } from '@/lib/types';
 import { ListItem, UnorderedList } from '@chakra-ui/react';
 import * as React from 'react';
-import * as styles from './styles'
 
-export interface IExternalLinkBoxProps {
-    items: ExternalLinkItem[]
+export interface IFooterLinkBoxProps {
+    items: LinkItem[] | NavMenuItem[]
+    isExternal?: boolean
 }
 
-export default function ExternalLinkBox({ items }: IExternalLinkBoxProps) {
+export default function FooterLinkBox({ items, isExternal = false }: IFooterLinkBoxProps) {
     return (
         <UnorderedList>
             {items.map(item =>
                 <ListItem listStyleType='none' key={item.name}>
-                    <PrimaryLink to={item.url} isExternal={true}>{item.name}</PrimaryLink>
+                    <PrimaryLink to={item.to} isExternal={isExternal}>{item.name}</PrimaryLink>
                 </ListItem>)}
         </UnorderedList>
     );

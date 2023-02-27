@@ -2,12 +2,12 @@ import { StaticImageData } from "next/image"
 
 export type NavMenuItem = {
     name: string,
-    id: string
+    to: string
 }
 
-export type ExternalLinkItem = {
+export type LinkItem = {
     name: string,
-    url: string
+    to: string
 }
 
 export type TableContentDetail = {
@@ -25,7 +25,7 @@ export type SkillDetails = {
 export type ProjectDetails = {
     name: string,
     description: string,
-    links: ExternalLinkItem[],
+    links: LinkItem[],
     image: StaticImageData,
     tecnologies: any[]
 }

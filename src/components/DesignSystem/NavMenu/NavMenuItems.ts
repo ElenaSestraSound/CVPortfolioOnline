@@ -1,10 +1,10 @@
 import { NavMenuItem } from "@/lib/types";
 
 export const NavMenuItems: NavMenuItem[] = [
-    { name: 'Home', id: 'home' },
-    { name: "About Me", id: 'about-me' },
-    { name: "Resumee", id: "resumee" },
-    { name: "Skills", id: "skills" },
-    { name: "Projects", id: "projects" },
-    { name: "Contact Me", id: "contact-me" }
+    { name: 'Home', to: 'home' },
+    { name: "About Me", to: 'about-me' },
+    { name: "Resumee", to: "resumee" },
+    { name: "Skills", to: "skills" },
+    { name: "Projects", to: "projects" },
+    { name: "Contact Me", to: "contact-me" }
 ]

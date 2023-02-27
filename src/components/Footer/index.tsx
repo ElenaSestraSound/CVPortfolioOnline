@@ -1,9 +1,9 @@
 import * as React from 'react';
 import EBLogo from '@/assets/logo/150/LogoWhite.svg'
-import { Box, Center, Flex, Grid, GridItem, Spacer, Text } from '@chakra-ui/react';
-import NavMenu from '../DesignSystem/NavMenu';
-import ExternalLinkBox from './ExternalLinkBox';
-import { externalLinks } from './ExternalLinkBox/ExternalLinks';
+import { Box, Flex, Spacer, Text } from '@chakra-ui/react';
+import { NavMenuItems } from '../DesignSystem/NavMenu/NavMenuItems';
+import FooterLinkBox from './FooterLinkBox';
+import { externalLinks } from './FooterLinkBox/ExternalLinks';
 import * as styles from './styles'
 
 import NextLogo from '@/assets/tecnologies/#FFF/next.svg'
@@ -20,8 +20,8 @@ export default function Footer() {
                 </Box>
                 <Spacer />
                 <Box display='inline-block' css={styles.footerLinkBox}>
-                    <NavMenu linkDisplay='block' />
-                    <ExternalLinkBox items={externalLinks} />
+                    <FooterLinkBox items={NavMenuItems} />
+                    <FooterLinkBox items={externalLinks} isExternal />
                 </Box>
                 <Spacer />
                 <Box display='inline-block' >

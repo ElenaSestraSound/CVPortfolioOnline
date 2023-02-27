@@ -35,7 +35,7 @@ export default function Project({ project }: IProjectProps) {
                         borderColor='brand.accent'
                         color='brand.accent'
                         as='a'
-                        href={project.links[0].url}
+                        href={project.links[0].to}
                         target='_blank'
                         size={['md']}
                         mr="30px">
@@ -49,7 +49,7 @@ export default function Project({ project }: IProjectProps) {
                         border='2px'
                         borderColor='brand.textPrimary'
                         as='a'
-                        href={project.links[1].url}
+                        href={project.links[1].to}
                         target='_blank'
                         borderRadius='full'
                         alignSelf='end'

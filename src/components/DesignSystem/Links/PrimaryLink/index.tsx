@@ -7,10 +7,11 @@ export interface IPrimaryLinkProps {
     to: string,
     isExternal: boolean,
     display?: string,
-    children: React.ReactNode
+    children: React.ReactNode,
+    isActive?: boolean
 }
 
-export default function PrimaryLink({ to, children, isExternal, display = 'block', onClick }: IPrimaryLinkProps) {
+export default function PrimaryLink({ to, children, isExternal, display = 'block' }: IPrimaryLinkProps) {
     const href = !isExternal ? `#${to}` : to
     return (
         <Link css={styles.link} display={display}
@@ -20,7 +21,6 @@ export default function PrimaryLink({ to, children, isExternal, display = 'block
             fontSize='xl'
             color='brand.textTerciary'
             href={href}
-            onClick={onClick}
             isExternal={isExternal}>
             {children}
         </Link>

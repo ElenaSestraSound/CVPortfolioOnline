@@ -1,9 +1,8 @@
 import { RootState } from '@/store';
 import { useDisclosure, Drawer, DrawerOverlay, DrawerContent } from '@chakra-ui/react';
 import * as React from 'react';
-import { useSelector } from 'react-redux';
+import { useSelector, useDispatch } from 'react-redux';
 import NavMenu from '../NavMenu';
-import { useDispatch } from 'react-redux'
 import { navigationActions } from '@/store/navigation-slice';
 
 export default function DrawerMenu() {
@@ -16,7 +15,7 @@ export default function DrawerMenu() {
         <>
             <Drawer
                 isOpen={isDrawerOpen}
-                placement='left'
+                placement='top'
                 onClose={drawerCloseHandler}
             >
                 <DrawerOverlay onClick={drawerCloseHandler} zIndex='1300' />

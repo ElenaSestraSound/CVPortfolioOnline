@@ -9,7 +9,7 @@ const navigationSlice = createSlice({
             state.isDrawerOpen = !state.isDrawerOpen
         },
         setActiveSection(state, action) {
-            state.activeSection = action.payload.activeSection
+            state.activeSection = action.payload
         }
     }
 })
