@@ -42,6 +42,6 @@ export const Studies: TableContentDetail[] = [
     {
         title: 'Audiovisual comunication degree',
         place: 'Universidad Rey Juan Carlos - Madrid, Spain',
-        date: 'Sep 2012 - Jun 2015'
+        date: 'Sep 2009 - Jun 2012'
     },
 ]

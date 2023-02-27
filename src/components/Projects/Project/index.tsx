@@ -2,6 +2,7 @@ import { ProjectDetails } from '@/lib/types';
 import { Button, ButtonGroup, Card, CardBody, CardFooter, Divider, Box, Heading, Stack, Text, Flex, Spacer } from '@chakra-ui/react';
 import Image from 'next/image';
 import * as React from 'react';
+import { v4 as uuid_v4 } from 'uuid'
 
 export interface IProjectProps {
     project: ProjectDetails
@@ -19,7 +20,7 @@ export default function Project({ project }: IProjectProps) {
                 </Stack>
                 <Box m='0 auto' w='fit-content'>
                     {project.tecnologies.map(icon =>
-                        <Box display='inline-block'>
+                        <Box key={uuid_v4()} display='inline-block'>
                             {icon}
                         </Box>)}
                 </Box>

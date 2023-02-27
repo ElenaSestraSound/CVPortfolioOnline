@@ -16,7 +16,7 @@ export default function Projects() {
                 <Box margin='0 auto' maxW={1240} w='100%' css={styles.cardBox} h={380}>
                     <Heading as='h2' size='xl' color='brand.textTerciary' separatorColor='brand.textTerciary' textAlign='center' mb='30px' >Projects</Heading>
                     <Box w='fit-content' m='0 auto' css={styles.card}>
-                        {ProjectList.map(project => <Project project={project}></Project>)}
+                        {ProjectList.map(project => <Project key={project.name} project={project}></Project>)}
                     </Box>
                 </Box>
             </Box>

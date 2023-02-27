@@ -10,7 +10,7 @@ export interface ITableContentProps {
 export default function TableContent({ details }: ITableContentProps) {
     return (
         <Box p={5}>
-            {details.map(item => <TableContentDetailComponent title={item.title} description={item.description} date={item.date} place={item.place} />)}
+            {details.map(item => <TableContentDetailComponent key={item.date} title={item.title} description={item.description} date={item.date} place={item.place} />)}
         </Box>
     );
 }
