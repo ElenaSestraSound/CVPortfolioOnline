@@ -1,5 +1,6 @@
 import AboutMe from '@/components/AboutMe'
 import ContactMe from '@/components/ContactMe'
+import DrawerMenu from '@/components/DesignSystem/DrawerMenu/DrawerMenu'
 import Footer from '@/components/Footer'
 import Header from '@/components/Header'
 import Main from '@/components/Main'
@@ -11,6 +12,7 @@ export default function Home() {
   return (
     <>
       <Header />
+      <DrawerMenu />
       <Main />
       <AboutMe />
       <Resumee />

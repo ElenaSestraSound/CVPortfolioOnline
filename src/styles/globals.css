@@ -8,3 +8,7 @@
 html {
   scroll-behavior: smooth;
 }
+
+.chakra-modal__content-container.css-17pwl6t {
+  width: fit-content;
+}

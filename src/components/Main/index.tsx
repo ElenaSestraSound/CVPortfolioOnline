@@ -8,21 +8,6 @@ import Section from '../DesignSystem/Section';
 import { useEffect, useState } from 'react';
 
 export default function Main() {
-    // let Logo = EBLogo
-    // if (typeof window !== 'undefined') {
-    //     const [windowSize, setWindowSize] = useState<number>(window.innerWidth);
-
-    //     useEffect(() => {
-    //         if (windowSize > 800) {
-    //             console.log("Window Size is greater than 800. Setting White logo")
-    //             Logo = EBLogo
-    //         } else {
-    //             console.log("Window Size is smaller than 800. Setting Orange logo")
-    //             Logo = EBLogoOrange
-    //         }
-    //     }, [windowSize])
-    // }
-    // console.log("Returning unicorns")
     return (
         <Section bg='brand.backgroundPrimary' id='home'>
             <Box css={styles.profile}>

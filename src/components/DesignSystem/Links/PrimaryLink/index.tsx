@@ -3,13 +3,14 @@ import * as React from 'react';
 import * as styles from './styles'
 
 export interface IPrimaryLinkProps {
+    onClick?: React.MouseEventHandler<HTMLAnchorElement>
     to: string,
     isExternal: boolean,
     display?: string,
     children: React.ReactNode
 }
 
-export default function PrimaryLink({ to, children, isExternal, display = 'block' }: IPrimaryLinkProps) {
+export default function PrimaryLink({ to, children, isExternal, display = 'block', onClick }: IPrimaryLinkProps) {
     const href = !isExternal ? `#${to}` : to
     return (
         <Link css={styles.link} display={display}
@@ -19,6 +20,7 @@ export default function PrimaryLink({ to, children, isExternal, display = 'block
             fontSize='xl'
             color='brand.textTerciary'
             href={href}
+            onClick={onClick}
             isExternal={isExternal}>
             {children}
         </Link>

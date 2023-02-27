@@ -4,21 +4,25 @@ export const headerTitle = css`
     h1 {
         font-family: 'Poppins';
     }
-    @media screen and (max-width: 800px) {
-        h1 {
-            display: none
-        }
-    }
-`
-
-export const spacer = css`
-    @media screen and (max-width: 800px) {
-        display: none
-    }
 `
 
 export const menuBar = css`
     position: sticky;
     top: 0;
-    z-index: 99999
+    z-index: 99999;
+    padding: 16px 20px;
+
+    button {
+        display: none;
+    }
+
+    @media screen and (max-width: 850px) {
+        nav {
+            display: none;
+        }
+
+        button {
+            display: inline-flex;
+        }
+    }
 `
