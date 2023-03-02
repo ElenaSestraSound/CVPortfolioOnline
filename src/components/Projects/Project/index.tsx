@@ -5,10 +5,11 @@ import * as React from 'react';
 import { v4 as uuid_v4 } from 'uuid'
 
 export interface IProjectProps {
-    project: ProjectDetails
+    project: ProjectDetails,
+    disabledButton?: boolean
 }
 
-export default function Project({ project }: IProjectProps) {
+export default function Project({ project, disabledButton }: IProjectProps) {
     return (
         <Card maxW='xs' variant='elevated' display='inline-block' ml={15} mr={15}>
             <CardBody>
@@ -29,6 +30,7 @@ export default function Project({ project }: IProjectProps) {
             <CardFooter>
                 <Box m='0 auto'>
                     <Button
+                        isDisabled={disabledButton}
                         _hover={{ 'color': 'brand.textTerciary', 'backgroundColor': 'brand.accent' }}
                         borderRadius='full'
                         bg='brand.textTerciary'
