@@ -31,6 +31,5 @@ export type ProjectDetails = {
 }
 
 export type Section = {
-    section_id: string,
     component: () => JSX.Element
 }
