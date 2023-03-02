@@ -29,3 +29,8 @@ export type ProjectDetails = {
     image: StaticImageData,
     tecnologies: any[]
 }
+
+export type Section = {
+    section_id: string,
+    component: () => JSX.Element
+}

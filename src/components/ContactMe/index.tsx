@@ -4,10 +4,7 @@ import Heading from '../DesignSystem/Heading';
 import Section from '../DesignSystem/Section';
 import ContactForm from './ContactForm';
 
-export interface IContactMeProps {
-}
-
-export default function ContactMe(props: IContactMeProps) {
+export default function ContactMe() {
     return (
         <Section id='contact-me' bg='brand.backgroundSecondary'>
             <Box w='100%'>

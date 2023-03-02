@@ -4,10 +4,7 @@ import Heading from '../DesignSystem/Heading';
 import ResumeeTable from './ResumeeTable';
 import * as styles from './styles'
 
-export interface IResumeeProps {
-}
-
-export default function Resumee(props: IResumeeProps) {
+export default function Resumee() {
     return (
         <Box id='resumee'>
             <Box bg='brand.backgroundSecondary' pb='300px' pt='115px'>

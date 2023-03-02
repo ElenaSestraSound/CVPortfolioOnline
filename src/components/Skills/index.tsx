@@ -5,10 +5,7 @@ import ProgressCircle from '../DesignSystem/ProgressCircle';
 import Section from '../DesignSystem/Section';
 import { SkillsDetails } from './Skills';
 
-export interface ISkillsProps {
-}
-
-export default function Skills(props: ISkillsProps) {
+export default function Skills() {
     return (
         <Section bg='brand.backgroundPrimary' id='skills'>
             <Box w='100%' maxW='700px' m='0 auto' pt={100}>
