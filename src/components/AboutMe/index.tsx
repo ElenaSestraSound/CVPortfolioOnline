@@ -8,9 +8,9 @@ import pic from '@/assets/rocketEmail.png'
 import SecondaryLink from '../DesignSystem/Links/SecondaryLink';
 
 
-export default function AboutMe() {
+const AboutMe = React.forwardRef((props, ref: React.Ref<HTMLDivElement>) => {
     return (
-        <Section bg='brand.backgroundSecondary' id='about-me'>
+        <Section bg='brand.backgroundSecondary' id='about-me' ref={ref}>
             <Flex css={styles.aboutMeContainer}>
                 <Box css={styles.detailsBox}>
                     <Heading as='h2' size='xl' color='brand.textPrimary'>
@@ -40,4 +40,6 @@ export default function AboutMe() {
             </Flex>
         </Section>
     );
-}
+})
+
+export default AboutMe

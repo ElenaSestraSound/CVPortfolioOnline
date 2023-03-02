@@ -4,9 +4,9 @@ import Heading from '../DesignSystem/Heading';
 import ResumeeTable from './ResumeeTable';
 import * as styles from './styles'
 
-export default function Resumee() {
+const Resumee = React.forwardRef((props, ref: React.Ref<HTMLDivElement>) => {
     return (
-        <Box id='resumee'>
+        <Box id='resumee' ref={ref}>
             <Box bg='brand.backgroundSecondary' pb='300px' pt='115px'>
                 <Box margin='0 auto' maxW={1240} pb='20px'>
                     <Heading as='h2' size='xl' color='brand.textPrimary' textAlign='center' separatorColor='brand.textPrimary'>Resumee</Heading>
@@ -19,4 +19,6 @@ export default function Resumee() {
             </Box>
         </Box>
     );
-}
+})
+
+export default Resumee

@@ -4,9 +4,9 @@ import * as styles from './styles'
 import EBLogo from '@/assets/logo/300/LogoWhite.svg'
 import Section from '../DesignSystem/Section';
 
-export default function Main() {
+const Main = React.forwardRef((props, ref: React.Ref<HTMLDivElement>) => {
     return (
-        <Section bg='brand.backgroundPrimary' id='home'>
+        <Section bg='brand.backgroundPrimary' id='home' ref={ref}>
             <Box css={styles.profile}>
                 <Box css={styles.profileDetails}>
                     <Text fontSize='3xl' as='b' color='brand.textTerciary'>Hello, I'm <Text color='brand.accent'>Elena</Text></Text>
@@ -41,4 +41,6 @@ export default function Main() {
             </Box>
         </Section >
     );
-}
+})
+
+export default Main

@@ -1,15 +1,15 @@
-import { Box, Text } from '@chakra-ui/react';
 import * as React from 'react';
+import { Box, Text } from '@chakra-ui/react';
+import Heading from '@/components/DesignSystem/Heading';
 import * as styles from './styles'
 import Project from './Project';
 import { ProjectList } from './ProjectList';
-import Heading from '../DesignSystem/Heading';
 
 
-export default function Projects() {
+const Projects = React.forwardRef((props, ref: React.Ref<HTMLDivElement>) => {
     let isThisProject = false
     return (
-        <Box id='projects'>
+        <Box id='projects' ref={ref}>
             <Box bg='brand.backgroundPrimary' pt={100}>
                 <Box margin='0 auto' maxW={1240} pb='20px' h={280} />
             </Box>
@@ -26,4 +26,6 @@ export default function Projects() {
             </Box>
         </Box>
     );
-}
+})
+
+export default Projects

@@ -4,9 +4,9 @@ import Heading from '../DesignSystem/Heading';
 import Section from '../DesignSystem/Section';
 import ContactForm from './ContactForm';
 
-export default function ContactMe() {
+const ContactMe = React.forwardRef((props, ref: React.Ref<HTMLDivElement>) => {
     return (
-        <Section id='contact-me' bg='brand.backgroundSecondary'>
+        <Section id='contact-me' bg='brand.backgroundSecondary' ref={ref}>
             <Box w='100%'>
                 <Heading as='h2' size='xl' color='brand.textPrimary' textAlign='center' mb='30px' separatorColor='brand.textPrimary'>Contact Me</Heading>
                 <Box maxW={700} m='0 auto' backgroundColor='brand.backgroundPrimary' borderRadius='30px' p='30px'>
@@ -15,4 +15,6 @@ export default function ContactMe() {
             </Box>
         </Section>
     );
-}
+})
+
+export default ContactMe

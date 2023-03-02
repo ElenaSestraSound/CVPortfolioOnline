@@ -5,9 +5,9 @@ import ProgressCircle from '../DesignSystem/ProgressCircle';
 import Section from '../DesignSystem/Section';
 import { SkillsDetails } from './Skills';
 
-export default function Skills() {
+const Skills = React.forwardRef((props, ref: React.Ref<HTMLDivElement>) => {
     return (
-        <Section bg='brand.backgroundPrimary' id='skills'>
+        <Section bg='brand.backgroundPrimary' id='skills' ref={ref}>
             <Box w='100%' maxW='700px' m='0 auto' pt={100}>
                 <Heading as='h2' size='xl' color='brand.textTerciary' separatorColor='brand.textTerciary' textAlign='center' mb='30px'>Skills</Heading>
                 <Box p='40px' textAlign='center'>
@@ -16,4 +16,6 @@ export default function Skills() {
             </Box>
         </Section>
     );
-}
+})
+
+export default Skills

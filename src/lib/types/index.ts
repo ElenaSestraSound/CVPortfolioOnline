@@ -1,4 +1,5 @@
 import { StaticImageData } from "next/image"
+import { ForwardRefExoticComponent, LegacyRef, RefAttributes } from "react"
 
 export type NavMenuItem = {
     name: string,
@@ -31,5 +32,5 @@ export type ProjectDetails = {
 }
 
 export type Section = {
-    component: () => JSX.Element
+    component: React.ForwardRefExoticComponent<React.LegacyRef<HTMLDivElement> & React.RefAttributes<unknown>>
 }
