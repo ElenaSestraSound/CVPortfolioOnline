@@ -27,13 +27,8 @@ export default function NavMenuItem({ to, children, display }: INavMenuItemProps
         }
     }, [activeSection, to, className])
 
-    const navItemOnClickHandler = () => {
-        dispatch(navigationActions.setActiveSection(to))
-    }
-
     return (
         <Link mr='5px' p='5px' display={display} className={className}
-            onClick={navItemOnClickHandler}
             fontWeight={600}
             fontSize='xl'
             color='brand.textTerciary'

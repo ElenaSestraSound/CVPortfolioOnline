@@ -1,10 +1,13 @@
+import useViewport from '@/hooks/use-viewport';
 import { Box } from '@chakra-ui/react';
 import * as React from 'react';
 import Heading from '../DesignSystem/Heading';
 import ResumeeTable from './ResumeeTable';
 import * as styles from './styles'
 
-const Resumee = React.forwardRef((props, ref: React.Ref<HTMLDivElement>) => {
+const Resumee = () => {
+    const ref = React.useRef<HTMLDivElement>(null)
+    useViewport(ref)
     return (
         <Box id='resumee' ref={ref}>
             <Box bg='brand.backgroundSecondary' pb='300px' pt='115px'>
@@ -19,6 +22,6 @@ const Resumee = React.forwardRef((props, ref: React.Ref<HTMLDivElement>) => {
             </Box>
         </Box>
     );
-})
+}
 
 export default Resumee

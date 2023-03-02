@@ -1,3 +1,4 @@
+import useViewport from '@/hooks/use-viewport';
 import { Box } from '@chakra-ui/react';
 import * as React from 'react';
 import Heading from '../DesignSystem/Heading';
@@ -5,7 +6,9 @@ import ProgressCircle from '../DesignSystem/ProgressCircle';
 import Section from '../DesignSystem/Section';
 import { SkillsDetails } from './Skills';
 
-const Skills = React.forwardRef((props, ref: React.Ref<HTMLDivElement>) => {
+const Skills = () => {
+    const ref = React.useRef<HTMLDivElement>(null)
+    useViewport(ref)
     return (
         <Section bg='brand.backgroundPrimary' id='skills' ref={ref}>
             <Box w='100%' maxW='700px' m='0 auto' pt={100}>
@@ -16,6 +19,6 @@ const Skills = React.forwardRef((props, ref: React.Ref<HTMLDivElement>) => {
             </Box>
         </Section>
     );
-})
+}
 
 export default Skills

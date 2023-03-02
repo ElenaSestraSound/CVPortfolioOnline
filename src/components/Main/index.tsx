@@ -3,8 +3,11 @@ import * as React from 'react';
 import * as styles from './styles'
 import EBLogo from '@/assets/logo/300/LogoWhite.svg'
 import Section from '../DesignSystem/Section';
+import useViewport from '@/hooks/use-viewport';
 
-const Main = React.forwardRef((props, ref: React.Ref<HTMLDivElement>) => {
+const Main = () => {
+    const ref = React.useRef<HTMLDivElement>(null)
+    useViewport(ref)
     return (
         <Section bg='brand.backgroundPrimary' id='home' ref={ref}>
             <Box css={styles.profile}>
@@ -41,6 +44,6 @@ const Main = React.forwardRef((props, ref: React.Ref<HTMLDivElement>) => {
             </Box>
         </Section >
     );
-})
+}
 
 export default Main

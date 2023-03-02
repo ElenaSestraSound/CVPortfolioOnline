@@ -6,9 +6,12 @@ import Section from '../DesignSystem/Section';
 import Image from 'next/image';
 import pic from '@/assets/rocketEmail.png'
 import SecondaryLink from '../DesignSystem/Links/SecondaryLink';
+import useViewport from '@/hooks/use-viewport';
 
 
-const AboutMe = React.forwardRef((props, ref: React.Ref<HTMLDivElement>) => {
+const AboutMe = () => {
+    const ref = React.useRef<HTMLDivElement>(null)
+    useViewport(ref)
     return (
         <Section bg='brand.backgroundSecondary' id='about-me' ref={ref}>
             <Flex css={styles.aboutMeContainer}>
@@ -40,6 +43,6 @@ const AboutMe = React.forwardRef((props, ref: React.Ref<HTMLDivElement>) => {
             </Flex>
         </Section>
     );
-})
+}
 
 export default AboutMe

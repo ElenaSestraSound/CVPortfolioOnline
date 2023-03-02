@@ -4,9 +4,12 @@ import Heading from '@/components/DesignSystem/Heading';
 import * as styles from './styles'
 import Project from './Project';
 import { ProjectList } from './ProjectList';
+import useViewport from '@/hooks/use-viewport';
 
 
-const Projects = React.forwardRef((props, ref: React.Ref<HTMLDivElement>) => {
+const Projects = () => {
+    const ref = React.useRef<HTMLDivElement>(null)
+    useViewport(ref)
     let isThisProject = false
     return (
         <Box id='projects' ref={ref}>
@@ -26,6 +29,6 @@ const Projects = React.forwardRef((props, ref: React.Ref<HTMLDivElement>) => {
             </Box>
         </Box>
     );
-})
+}
 
 export default Projects

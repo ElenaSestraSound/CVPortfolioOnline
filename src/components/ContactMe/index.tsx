@@ -1,10 +1,13 @@
+import useViewport from '@/hooks/use-viewport';
 import { Box } from '@chakra-ui/react';
 import * as React from 'react';
 import Heading from '../DesignSystem/Heading';
 import Section from '../DesignSystem/Section';
 import ContactForm from './ContactForm';
 
-const ContactMe = React.forwardRef((props, ref: React.Ref<HTMLDivElement>) => {
+const ContactMe = () => {
+    const ref = React.useRef<HTMLDivElement>(null)
+    useViewport(ref)
     return (
         <Section id='contact-me' bg='brand.backgroundSecondary' ref={ref}>
             <Box w='100%'>
@@ -15,6 +18,6 @@ const ContactMe = React.forwardRef((props, ref: React.Ref<HTMLDivElement>) => {
             </Box>
         </Section>
     );
-})
+}
 
 export default ContactMe
