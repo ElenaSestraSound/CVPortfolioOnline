@@ -1,11 +1,11 @@
 import * as React from 'react';
-import EBLogo from '@/assets/logo/150/LogoWhite.svg'
 import { Box, Flex, Spacer, Text } from '@chakra-ui/react';
 import { NavMenuItems } from '../DesignSystem/NavMenu/NavMenuItems';
 import FooterLinkBox from './FooterLinkBox';
 import { externalLinks } from './FooterLinkBox/ExternalLinks';
 import * as styles from './styles'
 
+import EBLogo from '@/assets/logo/150/LogoWhite.svg'
 import NextLogo from '@/assets/tecnologies/#FFF/next.svg'
 import ReduxLogo from '@/assets/tecnologies/#FFF/redux.svg'
 import ChakraLogo from '@/assets/tecnologies/#FFF/chakra.svg'
@@ -24,7 +24,7 @@ export default function Footer() {
                     <FooterLinkBox items={externalLinks} isExternal />
                 </Box>
                 <Spacer />
-                <Box display='inline-block' >
+                <Box display='inline-block' css={styles.tecnologiesBox}>
                     <Box >
                         <Box display='inline-block' mr='10px'>
                             <NextLogo />

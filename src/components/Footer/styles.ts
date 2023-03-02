@@ -28,3 +28,10 @@ export const footerLinkBox = css`
         vertical-align: top;
     }
 `
+
+export const tecnologiesBox = css`
+@media screen and (max-width: 830px) {
+    width: 100%;
+    text-align: center;
+}
+`
