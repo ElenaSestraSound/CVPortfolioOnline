@@ -11,7 +11,6 @@ function useViewport(ref: RefObject<HTMLElement>) {
     useEffect(() => {
         if (inViewport) {
             if (ref.current) {
-                console.log(ref.current.id + " is in viewPort")
                 dispatch(navigationActions.setActiveSection(ref.current.id))
             }
         }
