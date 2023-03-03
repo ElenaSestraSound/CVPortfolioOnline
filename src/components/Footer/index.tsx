@@ -14,7 +14,7 @@ import ChakraLogo from '@/assets/tecnologies/#FFF/chakra.svg'
 export default function Footer() {
     return (
         <Box bg='brand.backgroundPrimary' p='40px' >
-            <Flex css={styles.footer}>
+            <Flex css={styles.footer} maxW='1240px' m='0 auto' p='5px'>
                 <Box display='inline-block'>
                     <EBLogo />
                 </Box>

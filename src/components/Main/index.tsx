@@ -4,6 +4,7 @@ import * as styles from './styles'
 import EBLogo from '@/assets/logo/300/LogoWhite.svg'
 import Section from '../DesignSystem/Section';
 import useViewport from '@/hooks/use-viewport';
+import { TypeAnimation } from 'react-type-animation';
 
 const Main = () => {
     const ref = React.useRef<HTMLDivElement>(null)
@@ -14,11 +15,19 @@ const Main = () => {
                 <Box css={styles.profileDetails}>
                     <Text fontSize='3xl' as='b' color='brand.textTerciary'>Hello, I'm <Text color='brand.accent'>Elena</Text></Text>
                     <br />
-                    <Text fontSize='5xl' as='i' color='brand.textTerciary'>Full Stack developer</Text>
+                    <TypeAnimation sequence={[
+                        'Full Stack developer 💪', 1500,
+                        'React Geek 🤓', 1500,
+                        'Tech blogger 💻', 1500,
+                        '🎮 🤘 🏋️ 🎸 📹', 1500,
+                    ]}
+                        wrapper='p'
+                        repeat={Infinity}
+                    />
                     <Box>
                         <Button
                             _hover={{ 'color': 'brand.textPrimary', 'backgroundColor': 'brand.backgroundSecondary' }}
-                            size={['lg']}
+                            size={['md', 'lg']}
                             bg='brand.buttonSecondary'
                             color='brand.textTerciary'
                             border='2px'
@@ -33,7 +42,7 @@ const Main = () => {
                             borderRadius='full'
                             bg='brand.accent'
                             color='brand.textTerciary'
-                            size={['lg']}>
+                            size={['md', 'lg']}>
                             Get CV
                         </Button>
                     </Box>
