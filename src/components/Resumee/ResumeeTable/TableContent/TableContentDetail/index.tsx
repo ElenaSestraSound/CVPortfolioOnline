@@ -1,11 +1,12 @@
 import { Box, Flex, Heading, Spacer, Tag, TagLabel, Text } from '@chakra-ui/react';
 import * as React from 'react';
 import { TableContentDetail } from '@/lib/types';
+import * as styles from './styles'
 
 export default function TableContentDetailComponent({ title, description, date, place }: TableContentDetail) {
     return (
         <Box p='10px' mb='20px'>
-            <Flex>
+            <Flex css={styles.heading}>
                 <Heading as='h3' size='md' mr='30px' mb='10px'>{title}</Heading>
                 <Tag
                     h='min-content'
