@@ -1,7 +1,7 @@
 import { TableContentDetail } from '@/lib/types';
 import { Box } from '@chakra-ui/react';
 import * as React from 'react';
-import TableContentDetailComponent from './TableContentDetail/TableContentDetail';
+import TableContentDetailComponent from './TableContentDetail';
 
 export interface ITableContentProps {
     details: TableContentDetail[]
