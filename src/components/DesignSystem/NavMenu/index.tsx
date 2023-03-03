@@ -5,17 +5,17 @@ import { NavMenuItems } from './NavMenuItems'
 
 export interface INavMenuProps {
     linkDisplay?: string
-    onClick?: React.MouseEventHandler
+    onLinkClick?: React.MouseEventHandler
 }
 
-export default function NavMenu({ linkDisplay = 'inline-block', onClick }: INavMenuProps) {
+export default function NavMenu({ linkDisplay = 'inline-block', onLinkClick }: INavMenuProps) {
     return (
         <nav>
             {NavMenuItems.map(item => <NavMenuItem
                 key={item.to}
                 to={item.to}
                 display={linkDisplay}
-                onClick={onClick}>{item.name}
+                onLinkClick={onLinkClick}>{item.name}
             </NavMenuItem>)}
         </nav>
     );

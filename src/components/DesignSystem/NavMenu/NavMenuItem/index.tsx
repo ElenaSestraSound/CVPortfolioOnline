@@ -8,16 +8,15 @@ import styles from './styles.module.css'
 import { useDispatch, useSelector } from 'react-redux';
 
 export interface INavMenuItemProps {
-    onClick?: React.MouseEventHandler<HTMLAnchorElement>
+    onLinkClick?: React.MouseEventHandler<HTMLAnchorElement>
     to: string,
     display?: string,
     children: React.ReactNode,
 }
 
-export default function NavMenuItem({ to, children, display }: INavMenuItemProps) {
+export default function NavMenuItem({ to, children, display, onLinkClick }: INavMenuItemProps) {
     const [className, setClassName] = useState('')
     const activeSection = useSelector((state: RootState) => state.navigation.activeSection)
-    const dispatch = useDispatch()
 
     useEffect(() => {
         if (to === activeSection) {
@@ -27,12 +26,24 @@ export default function NavMenuItem({ to, children, display }: INavMenuItemProps
         }
     }, [activeSection, to, className])
 
+    const onClickHandler = (e: React.MouseEvent<HTMLAnchorElement, MouseEvent>) => {
+        if (onLinkClick) {
+            e.preventDefault()
+            onLinkClick(e)
+            setTimeout(() => {
+                let section = document.getElementById(to)
+                section?.scrollIntoView()
+            }, 120)
+        }
+    }
+
     return (
-        <Link mr='5px' p='5px' display={display} className={className}
+        <Link mr='5px' p='5px' display={display} className={className} onClick={onClickHandler}
             fontWeight={600}
             fontSize='xl'
             color='brand.textTerciary'
-            href={`#${to}`}>
+            href={`#${to}`}
+        >
             {children}
         </Link>
     );

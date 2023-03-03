@@ -20,7 +20,7 @@ export default function DrawerMenu() {
             >
                 <DrawerOverlay onClick={drawerCloseHandler} zIndex='1300' />
                 <DrawerContent bgColor='brand.backgroundPrimary' p='20px' pt='75px'>
-                    <NavMenu linkDisplay='block' />
+                    <NavMenu linkDisplay='block' onLinkClick={drawerCloseHandler} />
                 </DrawerContent>
             </Drawer>
         </>
