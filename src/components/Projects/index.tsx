@@ -13,7 +13,7 @@ const Projects = () => {
     let isThisProject = false
     return (
         <Box id='projects' ref={ref}>
-            <Box bg='brand.backgroundPrimary' pt={100}>
+            <Box bg='brand.backgroundPrimary' pt='170px'>
                 <Box margin='0 auto' maxW={1240} pb='20px' h={280} />
             </Box>
             <Box bg='brand.backgroundSecondary'>

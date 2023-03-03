@@ -10,7 +10,7 @@ const Resumee = () => {
     useViewport(ref)
     return (
         <Box id='resumee' ref={ref}>
-            <Box bg='brand.backgroundSecondary' pb='300px' pt='115px'>
+            <Box bg='brand.backgroundSecondary' pb='300px' pt='170px'>
                 <Box margin='0 auto' maxW={1240} pb='20px'>
                     <Heading as='h2' size='xl' color='brand.textPrimary' textAlign='center' separatorColor='brand.textPrimary'>Resumee</Heading>
                 </Box>

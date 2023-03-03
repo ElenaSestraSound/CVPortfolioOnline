@@ -11,7 +11,7 @@ const Skills = () => {
     useViewport(ref)
     return (
         <Section bg='brand.backgroundPrimary' id='skills' ref={ref}>
-            <Box w='100%' maxW='700px' m='0 auto' pt={100}>
+            <Box w='100%' maxW='700px' m='0 auto' pt='150px'>
                 <Heading as='h2' size='xl' color='brand.textTerciary' separatorColor='brand.textTerciary' textAlign='center' mb='30px'>Skills</Heading>
                 <Box p='40px' textAlign='center'>
                     {SkillsDetails.map(skill => <ProgressCircle key={skill.name} value={skill.value} name={skill.name}>{skill.icon}</ProgressCircle>)}
