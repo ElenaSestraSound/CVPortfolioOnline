@@ -52,13 +52,10 @@ export const profileLogo = css`
     vertical-align: middle;
     border-radius: 9999px;
     background-color: #070707;
-    
-    svg {
-        margin: 0 auto;
-    }
+    max-width: 300px;
 
     @media screen and (max-width: 990px) {
-        margin-left: 0
+        margin: 0 auto;
     }
 
 `

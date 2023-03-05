@@ -5,6 +5,8 @@ import EBLogo from '@/assets/logo/300/LogoWhite.svg'
 import Section from '../DesignSystem/Section';
 import useViewport from '@/hooks/use-viewport';
 import { TypeAnimation } from 'react-type-animation';
+import Image from 'next/image';
+import logo from '@/assets/logo/logo.png'
 
 const Main = () => {
     const ref = React.useRef<HTMLDivElement>(null)
@@ -48,7 +50,7 @@ const Main = () => {
                     </Box>
                 </Box>
                 <Box css={styles.profileLogo}>
-                    <EBLogo />
+                    <Image src={logo} alt={''} />
                 </Box>
             </Box>
         </Section >

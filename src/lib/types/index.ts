@@ -1,5 +1,4 @@
 import { StaticImageData } from "next/image"
-import { ForwardRefExoticComponent, LegacyRef, RefAttributes } from "react"
 
 export type NavMenuItem = {
     name: string,

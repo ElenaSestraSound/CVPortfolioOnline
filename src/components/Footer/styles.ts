@@ -1,18 +1,15 @@
 import { css } from "@emotion/react";
 
 export const footer = css`
-@media screen and (max-width: 830px) {
+@media screen and (max-width: 860px) {
     display: block;
     margin: 0 auto;
     width: fit-content;
     
-    >div:first-child {
-        width: 100%;
-        svg {
-            margin: 0 auto;
-        }
-    }
+    
     >div{
+        display: block;
+        margin: 0 auto;
         margin-bottom: 20px;
     }
 }
@@ -30,8 +27,9 @@ export const footerLinkBox = css`
 `
 
 export const tecnologiesBox = css`
-@media screen and (max-width: 830px) {
+@media screen and (max-width: 860px) {
     width: 100%;
     text-align: center;
+    
 }
 `

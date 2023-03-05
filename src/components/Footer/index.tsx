@@ -4,6 +4,8 @@ import { NavMenuItems } from '../DesignSystem/NavMenu/NavMenuItems';
 import FooterLinkBox from './FooterLinkBox';
 import { externalLinks } from './FooterLinkBox/ExternalLinks';
 import * as styles from './styles'
+import Image from 'next/image';
+import logo from '@/assets/logo/logo.png'
 
 import EBLogo from '@/assets/logo/150/LogoWhite.svg'
 import NextLogo from '@/assets/tecnologies/#FFF/next.svg'
@@ -15,8 +17,8 @@ export default function Footer() {
     return (
         <Box bg='brand.backgroundPrimary' p='40px' >
             <Flex css={styles.footer} maxW='1240px' m='0 auto' p='5px'>
-                <Box display='inline-block'>
-                    <EBLogo />
+                <Box display='inline-block' maxW='200px' m='0 auto'>
+                    <Image src={logo} alt={''} />
                 </Box>
                 <Spacer />
                 <Box display='inline-block' css={styles.footerLinkBox}>
