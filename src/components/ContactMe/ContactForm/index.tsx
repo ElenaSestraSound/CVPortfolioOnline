@@ -1,9 +1,10 @@
 import * as React from 'react';
-import { Box, Button, FormControl, FormLabel, Heading, Input, Stack, Textarea, } from '@chakra-ui/react';
+import { Box, Button, FormControl, FormLabel, Heading, Input, Stack, Textarea, useToast, } from '@chakra-ui/react';
 import { EmailIcon } from '@chakra-ui/icons';
 import { FormEvent } from 'react';
 import useInput from '@/hooks/use-input';
 import { validateEmail, validateText } from './validation';
+import useHttp from '@/hooks/use-http';
 
 
 export default function ContactForm() {
@@ -35,11 +36,32 @@ export default function ContactForm() {
     } = useInput(validateEmail)
 
     const formIsValid = nameIsValid && emailIsValid && messageIsValid
+    const { isLoading, hasError, sendRequest } = useHttp()
+    const toast = useToast()
 
-    const onSubmitFormHandler = (e: FormEvent<HTMLFormElement>) => {
+    const onSubmitFormHandler = async (e: FormEvent<HTMLFormElement>) => {
         e.preventDefault()
         if (formIsValid) {
             console.log('Sending form...')
+            sendRequest({
+                url: 'http://localhost:3000/api/sendMail',
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({
+                    name: nameValue,
+                    email: emailValue,
+                    message: messageValue
+                })
+            }, (responseData) => {
+                const data = JSON.parse(responseData)
+                toast(
+                    {
+                        title: data.name + ', your message has been received.',
+                        status: 'success',
+                        duration: 3000,
+                        isClosable: true
+                    })
+            })
         }
     }
     return (
