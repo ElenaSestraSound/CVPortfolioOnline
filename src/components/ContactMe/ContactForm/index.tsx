@@ -35,6 +35,12 @@ export default function ContactForm() {
         reset: emailReset
     } = useInput(validateEmail)
 
+    const formReset = () => {
+        nameReset()
+        emailReset()
+        messageReset()
+    }
+
     const formIsValid = nameIsValid && emailIsValid && messageIsValid
     const { isLoading, hasError, sendRequest } = useHttp()
     const toast = useToast()
@@ -53,15 +59,24 @@ export default function ContactForm() {
                     message: messageValue
                 })
             }, (responseData) => {
-                const data = JSON.parse(responseData)
                 toast(
                     {
-                        title: data.name + ', your message has been received.',
+                        title: responseData.name + ', your message has been received.',
                         status: 'success',
                         duration: 3000,
                         isClosable: true
                     })
+                formReset()
             })
+
+            if (hasError) {
+                toast({
+                    title: hasError,
+                    status: 'error',
+                    duration: 3000,
+                    isClosable: true,
+                })
+            }
         }
     }
     return (

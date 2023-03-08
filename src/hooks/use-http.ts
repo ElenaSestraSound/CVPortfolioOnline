@@ -37,6 +37,8 @@ const useHttp = (): HttpRequest => {
 
         } catch (err) {
             if (err instanceof Error) {
+                console.log(err)
+                console.log(err.message)
                 setError(err.message || 'Something went wrong!');
             }
         }

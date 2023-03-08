@@ -6,17 +6,30 @@ type FormData = {
     email: string,
     message: string
 }
+type ErrorResponse = {
+    message: string,
+}
+
+type Email = {
+    from: string,
+    to: string,
+    subject: string,
+    html: string
+}
 
 export default function handler(
     req: NextApiRequest,
-    res: NextApiResponse<FormData>
+    res: NextApiResponse<FormData | ErrorResponse>
 ) {
     if (req.method === 'POST') {
-        const formData: FormData = req.body as FormData
+        const formData: FormData = JSON.parse(req.body) as FormData
         try {
             sendEmail(formData)
-        } catch (e) {
-            console.log((e as Error).message)
+        } catch (err) {
+            if (err instanceof Error) {
+                console.log(err.message)
+                res.status(400).json({ message: err.message })
+            }
         }
         res.status(200).json(formData)
     }
@@ -24,32 +37,33 @@ export default function handler(
 
 async function sendEmail(data: FormData) {
     let transporter = nodemailer.createTransport({
-        host: 'smtp.gmail.com',
+        service: 'gmail',
         auth: {
-            type: 'OAUTH2',
             user: process.env.email,
-            accessToken: '',
+            pass: process.env.pwd,
         },
     });
-
-    transporter.sendMail({
-        from: data.name,
-        to: process.env.email,
-        subject: "Message from " + data.name,
-        html: `
-                <h3>Informations<h3/>
-                <ul>
-                <li>Name: ${data.name}<li/>
-                <li>Email: ${data.email}<li/>
-                </ul>
-                <h3>Message</h3>
-                <p>${data.message}<p/>
-                `,
-    }, (error, info) => {
+    const mail = createEmail(data)
+    transporter.sendMail(mail, (error, info) => {
         if (error) {
+            console.log("Something went wrong")
             console.log(error.message);
         } else {
+            console.log("Message Sent")
             console.log(info);
         }
     })
+}
+
+function createEmail(data: FormData): Email {
+    return {
+        from: data.name,
+        to: process.env.email ? process.env.email : '',
+        subject: "Portfolio Web Message from " + data.name,
+        html: `<h3>Information</h3>
+                <p>Name: ${data.name}</p>
+               <p>Email: ${data.email}</p>
+               <h3>Message</h3>
+               <p>${data.message}</p>`,
+    };
 }
