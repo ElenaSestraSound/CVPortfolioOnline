@@ -14,7 +14,7 @@ export const ProjectList: ProjectDetails[] = [
         description: 'This is my portfolio and CV website, where I have fetured my resumee and projects.',
         links:
             [{ name: 'Portfolio CV url', to: '#' },
-            { name: 'GitHub Repository', to: '#' }],
+            { name: 'GitHub Repository', to: 'https://github.com/ElenaSestraSound/CVPortfolioOnline' }],
         image: portfolioImg,
         tecnologies: [<NextLogo />, <TypeLogo />, <ChakraLogo />]
     },
