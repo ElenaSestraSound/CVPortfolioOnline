@@ -23,6 +23,11 @@ export const footerLinkBox = css`
     >ul {
         display: inline-block;
         vertical-align: top;
+        @media screen and (max-width: 390px) {
+            li a {
+                font-size: 18px !important;
+            }
+        }
     }
 `
 
@@ -30,6 +35,5 @@ export const tecnologiesBox = css`
 @media screen and (max-width: 860px) {
     width: 100%;
     text-align: center;
-    
 }
 `
