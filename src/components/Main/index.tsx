@@ -43,8 +43,11 @@ const Main = () => {
                             _hover={{ 'color': 'brand.textPrimary', 'backgroundColor': 'brand.backgroundSecondary' }}
                             borderRadius='full'
                             bg='brand.accent'
+                            size={['md', 'lg']}
                             color='brand.textTerciary'
-                            size={['md', 'lg']}>
+                            as='a'
+                            href='/downloads/CV2023.pdf'
+                            target='_blank'>
                             Get CV
                         </Button>
                     </Box>

@@ -34,7 +34,7 @@ export default function ResumeeTable() {
                 </Tabs>
             </Box>
             <Box ml='36px' mt='20px'>
-                <TerciaryLink to='cv.com' isExternal={false}>Download CV Here<ChevronRightIcon /></TerciaryLink>
+                <TerciaryLink to=' /downloads/CV2023.pdf' isExternal={true}>Download CV Here<ChevronRightIcon /></TerciaryLink>
             </Box>
         </Box>
     );
