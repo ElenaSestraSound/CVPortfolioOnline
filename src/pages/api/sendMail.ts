@@ -45,6 +45,7 @@ async function sendEmail(data: FormData) {
     });
     const mail = createEmail(data)
     transporter.sendMail(mail, (error, info) => {
+        console.log("a log")
         if (error) {
             console.log("Something went wrong")
             console.log(error.message);

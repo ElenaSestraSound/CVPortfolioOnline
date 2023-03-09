@@ -49,6 +49,7 @@ export default function ContactForm() {
         e.preventDefault()
         if (formIsValid) {
             console.log('Sending form...')
+            console.log(process.env.email)
             sendRequest({
                 url: 'http://localhost:3000/api/sendMail',
                 method: 'POST',
