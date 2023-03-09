@@ -15,7 +15,7 @@ const Main = () => {
         <Section bg='brand.backgroundPrimary' id='home' ref={ref}>
             <Box css={styles.profile}>
                 <Box css={styles.profileDetails}>
-                    <Text fontSize='3xl' as='b' color='brand.textTerciary'>Hello, I'm <Text color='brand.accent'>Elena</Text></Text>
+                    <Text fontSize='3xl' as='b' color='brand.textTerciary'>Hello, I&apos;m <Text color='brand.accent'>Elena</Text></Text>
                     <br />
                     <TypeAnimation sequence={[
                         'Full Stack developer 💪', 1500,

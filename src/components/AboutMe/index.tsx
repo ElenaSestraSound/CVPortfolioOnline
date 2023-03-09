@@ -20,7 +20,7 @@ const AboutMe = () => {
                         A little bit about me
                     </Heading>
                     <Text fontSize='2xl' fontWeight={600} color='brand.textSecondary'>
-                        I started my codding journey back in 2013 with Java and Android and since then I've never stopped.
+                        I started my codding journey back in 2013 with Java and Android and since then I&apos;ve never stopped.
                     </Text>
                     <br />
                     <Text fontSize='2xl' fontWeight={600} color='brand.textSecondary'>
@@ -29,7 +29,7 @@ const AboutMe = () => {
                     </Text>
                     <br />
                     <Text fontSize='2xl' fontWeight={600} color='brand.textSecondary'>
-                        Now I'm a TypeScript enthusiast building React applications and diving into fullstack development, looking forward to keep learning and making creative stuff.
+                        Now I&apos;m a TypeScript enthusiast building React applications and diving into fullstack development, looking forward to keep learning and making creative stuff.
                     </Text>
                     <br />
                     <SecondaryLink to='projects' isExternal={false} > Checkout my React projects here<ChevronRightIcon /></SecondaryLink>

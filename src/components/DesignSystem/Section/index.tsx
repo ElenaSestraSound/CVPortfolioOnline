@@ -19,4 +19,5 @@ const Section = React.forwardRef((props: ISectionProps, ref: React.Ref<HTMLDivEl
     );
 })
 
+Section.displayName = 'Section'
 export default Section
