@@ -44,11 +44,12 @@ async function sendEmail(data: FormData) {
         },
     });
     const mail = createEmail(data)
+    console.log(mail)
     transporter.sendMail(mail, (error, info) => {
+        console.log("sending email...")
         if (error) {
             console.log("Something went wrong:")
             console.log(error.message);
-            throw Error(error.message)
         } else {
             console.log("Email Sent")
             console.log(info);
