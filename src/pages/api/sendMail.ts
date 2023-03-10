@@ -37,6 +37,7 @@ export default function handler(
 
 async function sendEmail(data: FormData) {
     console.log("another log")
+    console.log(process.env.NEXT_PUBLIC_EMAIL)
     let transporter = nodemailer.createTransport({
         service: 'gmail',
         auth: {
