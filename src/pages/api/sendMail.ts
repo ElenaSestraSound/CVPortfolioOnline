@@ -26,7 +26,6 @@ export default function handler(
         try {
             sendEmail(formData)
         } catch (err) {
-            console.log("There was an error here")
             if (err instanceof Error) {
                 console.log(err.message)
                 res.status(400).json({ message: err.message })
@@ -46,12 +45,12 @@ async function sendEmail(data: FormData) {
     });
     const mail = createEmail(data)
     transporter.sendMail(mail, (error, info) => {
-        console.log("Something has happened...")
         if (error) {
-            console.log("Something went wrong")
+            console.log("Something went wrong:")
             console.log(error.message);
+            throw Error(error.message)
         } else {
-            console.log("Message Sent")
+            console.log("Email Sent")
             console.log(info);
         }
     })
@@ -61,7 +60,7 @@ function createEmail(data: FormData): Email {
     console.log("Creating email template...")
     return {
         from: data.name,
-        to: process.env.email ? process.env.email : '',
+        to: process.env.NEXT_PUBLIC_EMAIL ? process.env.NEXT_PUBLIC_EMAIL : '',
         subject: "Portfolio Web Message from " + data.name,
         html: `<h3>Information</h3>
                 <p>Name: ${data.name}</p>

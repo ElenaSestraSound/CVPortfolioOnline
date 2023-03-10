@@ -49,7 +49,6 @@ export default function ContactForm() {
         e.preventDefault()
         if (formIsValid) {
             console.log('Sending form...')
-            console.log(process.env.NEXT_PUBLIC_EMAIL)
             sendRequest({
                 url: '/api/sendMail',
                 method: 'POST',
