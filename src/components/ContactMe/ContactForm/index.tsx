@@ -61,7 +61,7 @@ export default function ContactForm() {
             }, (responseData) => {
                 toast(
                     {
-                        title: responseData.name + ', your message has been received.',
+                        title: responseData.sender + ', your message has been received.',
                         status: 'success',
                         duration: 3000,
                         isClosable: true

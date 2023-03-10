@@ -1,12 +1,13 @@
 import { NextApiRequest, NextApiResponse } from "next";
-import nodemailer from 'nodemailer';
+import sgMail from '@sendgrid/mail'
 
 type FormData = {
     name: string,
     email: string,
     message: string
 }
-type ErrorResponse = {
+type Response = {
+    sender?: string,
     message: string,
 }
 
@@ -16,57 +17,36 @@ type Email = {
     subject: string,
     html: string
 }
+sgMail.setApiKey(process.env.NEXT_PUBLIC_SENDGRID_API_KEY ? process.env.NEXT_PUBLIC_SENDGRID_API_KEY : '')
 
-export default function handler(
+export default async function handler(
     req: NextApiRequest,
-    res: NextApiResponse<FormData | ErrorResponse>
+    res: NextApiResponse<Response>
 ) {
     if (req.method === 'POST') {
         const formData: FormData = JSON.parse(req.body) as FormData
+        const msg = createEmail(formData)
         try {
-            sendEmail(formData)
+            const mail = await sgMail.send(msg)
         } catch (err) {
-            if (err instanceof Error) {
-                console.log(err.message)
-                res.status(400).json({ message: err.message })
-            }
+            console.log(err)
+            return res.status(404).json({ message: "Something went wrong" })
         }
-        res.status(200).json(formData)
+        return res.status(200).json({ sender: formData.name, message: "Email has been sent" })
     }
-}
-
-async function sendEmail(data: FormData) {
-    let transporter = nodemailer.createTransport({
-        service: 'gmail',
-        auth: {
-            user: process.env.NEXT_PUBLIC_EMAIL,
-            pass: process.env.NEXT_PUBLIC_PWD,
-        },
-    });
-    const mail = createEmail(data)
-    console.log(mail)
-    transporter.sendMail(mail, (error, info) => {
-        console.log("sending email...")
-        if (error) {
-            console.log("Something went wrong:")
-            console.log(error.message);
-        } else {
-            console.log("Email Sent")
-            console.log(info);
-        }
-    })
+    return res.status(404).json({ message: "Requested endpoint was not found" })
 }
 
 function createEmail(data: FormData): Email {
     console.log("Creating email template...")
     return {
-        from: data.name,
-        to: process.env.NEXT_PUBLIC_EMAIL ? process.env.NEXT_PUBLIC_EMAIL : '',
+        to: process.env.NEXT_PUBLIC_EMAIL as string,
+        from: process.env.NEXT_PUBLIC_EMAIL as string,
         subject: "Portfolio Web Message from " + data.name,
         html: `<h3>Information</h3>
                 <p>Name: ${data.name}</p>
-               <p>Email: ${data.email}</p>
-               <h3>Message</h3>
-               <p>${data.message}</p>`,
+                <p>Email: ${data.email}</p>
+                <h3>Message</h3>
+                <p>${data.message}</p>`
     };
 }
