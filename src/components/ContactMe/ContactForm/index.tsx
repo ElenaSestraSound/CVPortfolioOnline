@@ -51,7 +51,7 @@ export default function ContactForm() {
             console.log('Sending form...')
             console.log(process.env.email)
             sendRequest({
-                url: 'http://localhost:3000/api/sendMail',
+                url: '/api/sendMail',
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify({
