@@ -26,6 +26,7 @@ export default function handler(
         try {
             sendEmail(formData)
         } catch (err) {
+            console.log("There was an error here")
             if (err instanceof Error) {
                 console.log(err.message)
                 res.status(400).json({ message: err.message })
@@ -36,8 +37,6 @@ export default function handler(
 }
 
 async function sendEmail(data: FormData) {
-    console.log("another log")
-    console.log(process.env.NEXT_PUBLIC_EMAIL)
     let transporter = nodemailer.createTransport({
         service: 'gmail',
         auth: {
@@ -47,7 +46,7 @@ async function sendEmail(data: FormData) {
     });
     const mail = createEmail(data)
     transporter.sendMail(mail, (error, info) => {
-        console.log("a log")
+        console.log("Something has happened...")
         if (error) {
             console.log("Something went wrong")
             console.log(error.message);
@@ -59,6 +58,7 @@ async function sendEmail(data: FormData) {
 }
 
 function createEmail(data: FormData): Email {
+    console.log("Creating email template...")
     return {
         from: data.name,
         to: process.env.email ? process.env.email : '',
