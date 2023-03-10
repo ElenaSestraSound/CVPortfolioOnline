@@ -49,7 +49,7 @@ export default function ContactForm() {
         e.preventDefault()
         if (formIsValid) {
             console.log('Sending form...')
-            console.log(process.env.NEXT_PUBLIC_VERCEL_ENV_EMAIL)
+            console.log(process.env.NEXT_PUBLIC_EMAIL)
             sendRequest({
                 url: '/api/sendMail',
                 method: 'POST',
