@@ -39,8 +39,8 @@ async function sendEmail(data: FormData) {
     let transporter = nodemailer.createTransport({
         service: 'gmail',
         auth: {
-            user: process.env.email,
-            pass: process.env.pwd,
+            user: process.env.NEXT_PUBLIC_VERCEL_ENV_EMAIL,
+            pass: process.env.NEXT_PUBLIC_VERCEL_ENV_PWD,
         },
     });
     const mail = createEmail(data)
