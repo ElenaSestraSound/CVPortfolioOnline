@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { Box, Text } from '@chakra-ui/react';
+import { Box } from '@chakra-ui/react';
 import Heading from '@/components/DesignSystem/Heading';
 import * as styles from './styles'
 import Project from './Project';

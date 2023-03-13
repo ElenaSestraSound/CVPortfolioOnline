@@ -1,5 +1,5 @@
 import { RootState } from '@/store';
-import { useDisclosure, Drawer, DrawerOverlay, DrawerContent } from '@chakra-ui/react';
+import { Drawer, DrawerOverlay, DrawerContent } from '@chakra-ui/react';
 import * as React from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import NavMenu from '../NavMenu';

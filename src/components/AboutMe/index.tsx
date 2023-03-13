@@ -1,4 +1,4 @@
-import { Heading, Text, Box, Flex, Center, Icon } from '@chakra-ui/react';
+import { Heading, Text, Box, Flex, Center } from '@chakra-ui/react';
 import { ChevronRightIcon } from '@chakra-ui/icons'
 import * as React from 'react';
 import * as styles from './styles'

@@ -1,4 +1,4 @@
-import { Box, Flex, Heading, Spacer, Tag, TagLabel, Text } from '@chakra-ui/react';
+import { Box, Flex, Heading, Tag, TagLabel, Text } from '@chakra-ui/react';
 import * as React from 'react';
 import { TableContentDetail } from '@/lib/types';
 import * as styles from './styles'

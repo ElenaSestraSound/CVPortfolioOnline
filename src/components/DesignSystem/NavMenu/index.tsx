@@ -1,5 +1,4 @@
 import * as React from 'react';
-import PrimaryLink from '../Links/PrimaryLink';
 import NavMenuItem from './NavMenuItem';
 import { NavMenuItems } from './NavMenuItems'
 

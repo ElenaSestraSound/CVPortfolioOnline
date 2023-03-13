@@ -6,12 +6,7 @@ import { externalLinks } from './FooterLinkBox/ExternalLinks';
 import * as styles from './styles'
 import Image from 'next/image';
 import logo from '@/assets/logo/logo.png'
-
-import EBLogo from '@/assets/logo/150/LogoWhite.svg'
-import NextLogo from '@/assets/tecnologies/#FFF/next.svg'
-import ReduxLogo from '@/assets/tecnologies/#FFF/redux.svg'
-import ChakraLogo from '@/assets/tecnologies/#FFF/chakra.svg'
-
+import { logoswhite as logos } from '@/utils/CommonUtils/logos';
 
 export default function Footer() {
     return (
@@ -29,13 +24,13 @@ export default function Footer() {
                 <Box display='inline-block' css={styles.tecnologiesBox}>
                     <Box >
                         <Box display='inline-block' mr='10px'>
-                            <NextLogo />
+                            {logos.Next}
                         </Box>
                         <Box display='inline-block' ml='10px' mr='10px'>
-                            <ReduxLogo />
+                            {logos.Redux}
                         </Box>
                         <Box display='inline-block' ml='10px'>
-                            <ChakraLogo />
+                            {logos.ChakraUi}
                         </Box>
                     </Box>
                     <Text fontSize='lg' fontWeight={600} color='brand.textTerciary' p='5px'>Copyright © 2023 Elena Bañón </Text>

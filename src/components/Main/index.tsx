@@ -1,7 +1,6 @@
 import { Box, Text, Button } from '@chakra-ui/react';
 import * as React from 'react';
 import * as styles from './styles'
-import EBLogo from '@/assets/logo/300/LogoWhite.svg'
 import Section from '../DesignSystem/Section';
 import useViewport from '@/hooks/use-viewport';
 import { TypeAnimation } from 'react-type-animation';

@@ -1,11 +1,10 @@
 import { RootState } from '@/store';
-import { navigationActions } from '@/store/navigation-slice';
 import { Link } from '@chakra-ui/react';
 import * as React from 'react';
 import { useEffect, useState } from 'react';
 import styles from './styles.module.css'
 
-import { useDispatch, useSelector } from 'react-redux';
+import { useSelector } from 'react-redux';
 
 export interface INavMenuItemProps {
     onLinkClick?: React.MouseEventHandler<HTMLAnchorElement>

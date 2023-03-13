@@ -1,10 +1,7 @@
 import { ProjectDetails } from "@/lib/types";
 import portfolioImg from '@/assets/Projects/portfolio.png'
 import foodappImg from '@/assets/Projects/foodapp.png'
-import NextLogo from '@/assets/tecnologies/#070707/next.svg'
-import TypeLogo from '@/assets/tecnologies/#070707/tys.svg'
-import ChakraLogo from '@/assets/tecnologies/#070707/chakra.svg'
-import ReactLogo from '@/assets/tecnologies/#070707/react.svg'
+import { logosBlack as logos } from "@/utils/CommonUtils/logos";
 
 export const ProjectList: ProjectDetails[] = [
     {
@@ -14,7 +11,7 @@ export const ProjectList: ProjectDetails[] = [
             [{ name: 'Portfolio CV url', to: '#' },
             { name: 'GitHub Repository', to: 'https://github.com/ElenaSestraSound/CVPortfolioOnline' }],
         image: portfolioImg,
-        tecnologies: [<NextLogo />, <TypeLogo />, <ChakraLogo />]
+        tecnologies: [logos.Next, logos.TypeScript, logos.ChakraUi]
     },
     {
         name: 'Order Food App',
@@ -23,7 +20,7 @@ export const ProjectList: ProjectDetails[] = [
             [{ name: 'Order Food App url', to: 'https://order-food-app-mu.vercel.app/' },
             { name: 'GitHub Repository', to: 'https://github.com/ElenaSestraSound/order-food-app' }],
         image: foodappImg,
-        tecnologies: [<ReactLogo />, <TypeLogo />, <ChakraLogo />]
+        tecnologies: [logos.React, logos.TypeScript, logos.ChakraUi]
     },
     // {
     //     name: 'Personal Blog',

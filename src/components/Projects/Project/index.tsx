@@ -1,5 +1,5 @@
 import { ProjectDetails } from '@/lib/types';
-import { Button, ButtonGroup, Card, CardBody, CardFooter, Divider, Box, Heading, Stack, Text, Flex, Spacer } from '@chakra-ui/react';
+import { Button, Card, CardBody, CardFooter, Divider, Box, Heading, Stack, Text } from '@chakra-ui/react';
 import Image from 'next/image';
 import * as React from 'react';
 import { v4 as uuid_v4 } from 'uuid'

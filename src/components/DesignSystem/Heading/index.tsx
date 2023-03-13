@@ -1,4 +1,4 @@
-import { Box, Heading as HeadingChakra, ResponsiveValue } from '@chakra-ui/react';
+import { Box, Heading as HeadingChakra } from '@chakra-ui/react';
 import * as React from 'react';
 import HeadingSeparator from './HeadingSeparator';
 

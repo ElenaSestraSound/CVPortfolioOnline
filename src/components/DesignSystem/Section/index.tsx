@@ -1,4 +1,4 @@
-import { Box, Flex, Heading } from '@chakra-ui/react';
+import { Box, Flex } from '@chakra-ui/react';
 import { SerializedStyles } from '@emotion/react';
 import * as React from 'react';
 
