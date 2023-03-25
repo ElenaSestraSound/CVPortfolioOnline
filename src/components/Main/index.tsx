@@ -17,7 +17,7 @@ const Main = () => {
                     <Text fontSize='3xl' as='b' color='brand.textTerciary'>Hello, I&apos;m <Text color='brand.accent'>Elena</Text></Text>
                     <br />
                     <TypeAnimation sequence={[
-                        'Full Stack developer 💪', 1500,
+                        'Frontend developer 💪', 1500,
                         'React Geek 🤓', 1500,
                         'Tech blogger 💻', 1500,
                         '🎮 🤘 🏋️ 🎸 📹', 1500,
