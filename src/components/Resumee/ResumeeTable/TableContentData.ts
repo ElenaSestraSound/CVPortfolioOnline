@@ -11,7 +11,7 @@ export const Jobs: TableContentDetail[] = [
         title: 'FRONTEND DEVELOPER',
         place: 'El Independiente - Madrid, Spain',
         description: 'El Independiente is a popular digital spanish newspaper. Developed fronted features like sliders, timelines, news feed, etc. using: JavaScript, SCSS and HTML.Developed Wordpress internal tools to help journalists using: JavaScript, SCSS, HTML and PHP',
-        date: 'Feb 2018 - Jun 2020'
+        date: 'Feb 2018 - Oct 2020'
     },
     {
         title: 'FRONTEND DEVELOPER',
