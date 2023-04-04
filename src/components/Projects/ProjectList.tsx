@@ -22,13 +22,13 @@ export const ProjectList: ProjectDetails[] = [
         image: foodappImg,
         tecnologies: [logos.React, logos.TypeScript, logos.ChakraUi]
     },
-    // {
-    //     name: 'Personal Blog',
-    //     description: 'This is my personal blog page where I write about coding.',
-    //     links:
-    //         [{ name: 'Personal Blog url', url: '#' },
-    //         { name: 'GitHub Repository', url: '#' }],
-    //     image: portfolioImg,
-    //     tecnologies: [<NextLogo />, <TypeLogo />, <CSSLogo />]
-    // },
+    {
+        name: 'Personal Blog',
+        description: 'This is my personal blog page where I write about coding. It is still in progress.',
+        links:
+            [{ name: 'Personal Blog url', to: 'https://elenabao-blog.vercel.app/' },
+            { name: 'GitHub Repository', to: 'https://github.com/ElenaSestraSound/elenabao-blog' }],
+        image: portfolioImg,
+        tecnologies: [logos.Next, logos.TypeScript, logos.ChakraUi]
+    },
 ]
