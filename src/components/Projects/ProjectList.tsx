@@ -1,6 +1,7 @@
 import { ProjectDetails } from "@/lib/types";
 import portfolioImg from '@/assets/Projects/portfolio.png'
 import foodappImg from '@/assets/Projects/foodapp.png'
+import blogImg from '@/assets/Projects/blog.png'
 import { logosBlack as logos } from "@/utils/CommonUtils/logos";
 
 export const ProjectList: ProjectDetails[] = [
