@@ -29,7 +29,7 @@ export const ProjectList: ProjectDetails[] = [
         links:
             [{ name: 'Personal Blog url', to: 'https://elenabao-blog.vercel.app/' },
             { name: 'GitHub Repository', to: 'https://github.com/ElenaSestraSound/elenabao-blog' }],
-        image: portfolioImg,
+        image: blogImg,
         tecnologies: [logos.Next, logos.TypeScript, logos.ChakraUi]
     },
 ]
