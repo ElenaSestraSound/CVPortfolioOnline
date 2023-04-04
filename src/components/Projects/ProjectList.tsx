@@ -25,7 +25,7 @@ export const ProjectList: ProjectDetails[] = [
     },
     {
         name: 'Personal Blog',
-        description: 'This is my personal blog page where I write about coding. It is still in progress.',
+        description: 'This is my personal blog page where I write about coding. It is still work in progress.',
         links:
             [{ name: 'Personal Blog url', to: 'https://elenabao-blog.vercel.app/' },
             { name: 'GitHub Repository', to: 'https://github.com/ElenaSestraSound/elenabao-blog' }],
