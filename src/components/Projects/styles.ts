@@ -17,3 +17,13 @@ export const cardBox = css`
     }
   }
 `;
+
+export const cardBoxcontainer = css`
+@media screen and (max-width: 1025px) {
+  height: 1000px;
+}
+  @media screen and (max-width: 690px) {
+    height: 1800px;
+  }
+
+`;

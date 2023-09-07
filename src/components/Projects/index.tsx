@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { Box, Flex } from '@chakra-ui/react';
 import Heading from '@/components/DesignSystem/Heading';
-import * as styles from './styles';
+import { cardBox, cardBoxcontainer } from './styles';
 import Project from './Project';
 import { ProjectList } from './ProjectList';
 import useViewport from '@/hooks/use-viewport';
@@ -16,8 +16,8 @@ const Projects = () => {
       <Box bg='brand.backgroundPrimary' pt='600px'>
         <Box margin='0 auto' maxW={1240} pb='20px' h={280} />
       </Box>
-      <Box bg='brand.backgroundSecondary'>
-        <Box margin='0 auto' maxW={1240} w='100%' css={styles.cardBox}>
+      <Box bg='brand.backgroundSecondary' css={cardBoxcontainer}>
+        <Box margin='0 auto' maxW={1240} w='100%' css={cardBox}>
           <Heading as='h2' size='xl' color='brand.textTerciary' separatorColor='brand.textTerciary' textAlign='center' mb='30px' >Projects</Heading>
           <Flex w='fit-content' justifyContent="center" flexWrap="wrap" m='0 auto'>
             {ProjectList.map(project => {

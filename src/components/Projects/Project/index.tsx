@@ -11,7 +11,7 @@ export interface IProjectProps {
 
 export default function Project ({ project, disabledButton }: IProjectProps) {
   return (
-    <Card maxW='xs' variant='elevated' mb={4} mr={4}>
+    <Card maxW='xs' variant='elevated' mb={4} marginX={2}>
       <CardBody>
         <Image src={project.image} alt=''></Image>
         <Stack mt='6' spacing='3' h={120} >

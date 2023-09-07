@@ -11,9 +11,3 @@ svg {
   }
 }
 `;
-
-export const skills = css`
-@media screen and (max-width: 500px) {
-
-}
-`;
