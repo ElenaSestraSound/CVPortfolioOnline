@@ -2,7 +2,7 @@ import { ProjectDetails } from "@/lib/types";
 import portfolioImg from '@/assets/Projects/portfolio.png';
 import foodappImg from '@/assets/Projects/foodapp.png';
 import blogImg from '@/assets/Projects/blog.png';
-import linkApp from '@/assets/Projects/linkApp.png';
+import linkApp from '@/assets/Projects/linkapp.png';
 import comboBreakdown from '@/assets/Projects/comboBreakdown.png';
 import { logos } from "@/utils/CommonUtils/logos";
 
