@@ -5,6 +5,10 @@
   font-style: normal;
 }
 
+body {
+  background-color: #f5f0f6ff !important;
+}
+
 html {
   scroll-behavior: smooth;
 }

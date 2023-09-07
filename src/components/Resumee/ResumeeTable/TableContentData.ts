@@ -2,12 +2,6 @@ import { TableContentDetail } from "@/lib/types";
 
 export const Jobs: TableContentDetail[] = [
   {
-    title: 'FULL-STACK DEVELOPER',
-    place: 'LinkApp - Berlin, Germany',
-    description: 'A web page to have all your social media links in one place. Built the app from the ground (frontend, backend and database)',
-    date: '2023'
-  },
-  {
     title: 'FRONTED DEVELOPER',
     place: 'Asesoría Técnica Editorial, Madrid, Spain',
     description: 'ATE is an agency that provides web development services to magazines: Worked in different projects as frontend engineer using HTML, CSS, JS, TypeScript, React and Next among others. Maintenance and customer support.',

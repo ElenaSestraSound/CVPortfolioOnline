@@ -1,17 +1,19 @@
-import { css } from '@emotion/react'
+import { css } from '@emotion/react';
 
 export const cardBox = css`
     position: relative;
-    top: -280px;
-    @media screen and (max-width: 900px) {
-        height: 910px;
+    top: -780px;
+
+    @media screen and (min-width: 900px) {
+      height: 600px;
     }
-`
-export const card = css`
-    @media screen and (max-width: 900px) {
-        >div {
-            display: block;
-            margin-bottom: 30px;
-        }
+
+    @media screen and (min-width: 1200px) {
+      height: 800px;
     }
-`
+
+    @media screen and (min-width: 1600px) {
+      height: 380px;
+    }
+  }
+`;

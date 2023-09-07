@@ -1,39 +1,37 @@
-import NextLogoBlack from '@/assets/tecnologies/#070707/next.svg'
-import TypeLogoBlack from '@/assets/tecnologies/#070707/tys.svg'
-import ChakraLogoBlack from '@/assets/tecnologies/#070707/chakra.svg'
-import ReactLogoBlack from '@/assets/tecnologies/#070707/react.svg'
-import ReduxLogoBlack from '@/assets/tecnologies/#070707/redux.svg'
-import CSSLogoBlack from '@/assets/tecnologies/#070707/css3.svg'
-import JSLogoBlack from '@/assets/tecnologies/#070707/js.svg'
-
-import NextLogoWhite from '@/assets/tecnologies/#FFF/next.svg'
-import TypeLogoWhite from '@/assets/tecnologies/#FFF/tys.svg'
-import ChakraLogoWhite from '@/assets/tecnologies/#FFF/chakra.svg'
-import ReactLogoWhite from '@/assets/tecnologies/#FFF/react.svg'
-import ReduxLogoWhite from '@/assets/tecnologies/#FFF/redux.svg'
-import CSSLogoWhite from '@/assets/tecnologies/#FFF/css3.svg'
-import JSLogoWhite from '@/assets/tecnologies/#FFF/js.svg'
+import NextLogo from '@/assets/tecnologies/next.svg';
+import TypeLogo from '@/assets/tecnologies/tys.svg';
+import ChakraLogo from '@/assets/tecnologies/chakra.svg';
+import ReactLogo from '@/assets/tecnologies/react.svg';
+import ReduxLogo from '@/assets/tecnologies/redux.svg';
+import CSSLogo from '@/assets/tecnologies/css3.svg';
+import JSLogo from '@/assets/tecnologies/js.svg';
+import ExpressLogo from '@/assets/tecnologies/express.svg';
+import TailwindLogo from '@/assets/tecnologies/tailwind.svg';
+import JestLogo from '@/assets/tecnologies/jest.svg';
+import KoaLogo from '@/assets/tecnologies/koa.svg';
+import PostgressLogo from '@/assets/tecnologies/postgress.svg';
+import TestingLibraryLogo from '@/assets/tecnologies/testing.svg';
+import MongoLogo from '@/assets/tecnologies/mongo.svg';
+import SequelizeLogo from '@/assets/tecnologies/sequelize.svg';
+import CypressLogo from '@/assets/tecnologies/cypress.svg';
+import MongooseLogo from '@/assets/tecnologies/mongoose.svg';
 
 export const logos = {
-    black: {
-        Next: <NextLogoBlack />,
-        TypeScript: <TypeLogoBlack />,
-        ChakraUi: <ChakraLogoBlack />,
-        React: <ReactLogoBlack />,
-        Redux: <ReduxLogoBlack />,
-        Css: <CSSLogoBlack />,
-        JavaScript: <JSLogoBlack />
-    },
-    white: {
-        Next: <NextLogoWhite />,
-        TypeScript: <TypeLogoWhite />,
-        ChakraUi: <ChakraLogoWhite />,
-        React: <ReactLogoWhite />,
-        Redux: <ReduxLogoWhite />,
-        Css: <CSSLogoWhite />,
-        JavaScript: <JSLogoWhite />
-    }
-}
-
-export const logosBlack = logos.black
-export const logoswhite = logos.white
+  Next: <NextLogo />,
+  TypeScript: <TypeLogo />,
+  ChakraUi: <ChakraLogo />,
+  React: <ReactLogo />,
+  Redux: <ReduxLogo />,
+  Css: <CSSLogo />,
+  JavaScript: <JSLogo />,
+  Express: <ExpressLogo />,
+  Tailwind: <TailwindLogo />,
+  Jest: <JestLogo />,
+  Koa: <KoaLogo />,
+  Postgress: <PostgressLogo />,
+  TestingLibrary: <TestingLibraryLogo />,
+  Mongo: <MongoLogo />,
+  Sequelize: <SequelizeLogo />,
+  Cypress: <CypressLogo />,
+  Mongoose: <MongooseLogo />
+};

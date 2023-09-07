@@ -5,15 +5,14 @@ export const footer = css`
     display: block;
     margin: 0 auto;
     width: fit-content;
-    
-    
+
     >div{
         display: block;
         margin: 0 auto;
         margin-bottom: 20px;
     }
 }
-`
+`;
 
 export const footerLinkBox = css`
     nav {
@@ -29,11 +28,14 @@ export const footerLinkBox = css`
             }
         }
     }
-`
+`;
 
 export const tecnologiesBox = css`
+svg {
+  fill: #fff;
+}
 @media screen and (max-width: 860px) {
     width: 100%;
     text-align: center;
 }
-`
+`;
